@@ -24,12 +24,8 @@ module.exports = {
     clean: true,
     // path: __dirname + '/dist/js'
     // assetModuleFilename: '[path][name][ext]',
-    assetModuleFilename: (pathData) => {
-      const filepath = path
-        .dirname(pathData.filename)
-        .split('/')
-        .slice(1)
-        .join('/');
+    assetModuleFilename: pathData => {
+      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return `${filepath}/[name][ext]`;
     },
   },
