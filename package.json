@@ -30,6 +30,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.33.0",
     "group-css-media-queries-loader": "^4.3.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
@@ -43,7 +44,7 @@
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
-    "webpack": "^5.81.0",
+    "webpack": "^5.88.2",
     "webpack-cli": "^5.0.2",
     "webpack-dev-server": "^4.13.3"
   }

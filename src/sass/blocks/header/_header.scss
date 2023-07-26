@@ -1,3 +1,54 @@
 .header {
-
+  min-height: 170px;
+  background-color: #0833C5;
+  color: var(--white-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  &__logo {
+    margin-top: 40px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    &__item {
+      color: #F8F9FA;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      font-family: Gotham Pro;
+      cursor: pointer;
+    }
+  }
+  &__follow {
+    display: flex;
+    flex-direction: column;
+    width: 122px  ;
+    &_icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  &__search {
+    display: flex;
+    flex-direction: row;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    a {
+      color: var(--white-text);
+    }
+  }
 }

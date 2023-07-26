@@ -8,9 +8,94 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Webpack!</h1>
-        <button class="btn btn-primary">Primary button</button>
-    </div>
+<!--    <div class="container py-4 px-3 mx-auto">-->
+<!--        <h1>Hello, Bootstrap and Webpack!</h1>-->
+<!--        <button class="btn btn-primary">Primary button</button>-->
+<!--    </div>-->
+
+    <header class='header'>
+        <div class='header__subheader'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='hamburger'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class='col-xl-2'>
+                        <a href='#' class='header__logo'>
+                            <img src='./icons/logo.svg' alt='logo'>
+                        </a>
+                    </div>
+                    <div class='col-xl-2'>
+                        <div class='phonecontacts'>
+                            <a href="tel:+80985554100" class="phonecontacts__phone">+380 (98) 555 41 00</a>
+                            <a href="tel:+80665554100" class="phonecontacts__phone">+380 (66) 555 41 00</a>
+                            <div class='phonecontacts__call'>Перезвоните мне</div>
+                        </div>
+                    </div>
+                    <div class='col-xl-2'>
+                        <div class='schedule'>
+                            <div class='schedule__work'>Работа call центра</div>
+                            <div class='schedule__time'>Пн-Пт: 8:00-21:00</div>
+                            <div class='schedule__time'>Сб-Вс: 8:00-20:00</div>
+                        </div>
+                    </div>
+                    <div class='col-xl-2'>
+                        <div class='header__follow'>
+                            <div class='header__follow_text'>Следите за нами</div>
+                            <div class='header__follow_icon'>
+                                <a href='#'>
+                                    <svg class="icon">
+                                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href='#'>
+                                    <svg class="icon">
+                                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href='#'>
+                                    <svg class="icon">
+                                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-xl-2'>
+                        <div class='header__search'>
+                            <a href='#'>
+                                <svg class="icon">
+                                    <use xlink:href="icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href='#' class='header__search'>Поиск</a>
+                        </div>
+                    </div>
+                    <div class='col-xl-2'>
+                        <button type="button" class="btn btn-warning">Записаться на прием</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class='container'>
+                <div class='row'>
+                    <ul class='menu'>
+                        <li class='menu__item'>Заболевания</li>
+                        <li class='menu__item'>Услуги</li>
+                        <li class='menu__item'>Больницы</li>
+                        <li class='menu__item'>Врачи</li>
+                        <li class='menu__item'>Цены</li>
+                        <li class='menu__item'>Отзывы</li>
+                        <li class='menu__item'>Блог</li>
+                        <li class='menu__item'>О сервисе</li>
+                        <li class='menu__item'>Контакты</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
