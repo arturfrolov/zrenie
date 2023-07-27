@@ -22,7 +22,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class='col-xl-2'>
+                    <div class='col-xl-2 d-flex align-self-center left'>
                         <a href='#' class='header__logo'>
                             <img src='./icons/logo.svg' alt='logo'>
                         </a>
@@ -31,7 +31,13 @@
                         <div class='phonecontacts'>
                             <a href="tel:+80985554100" class="phonecontacts__phone">+380 (98) 555 41 00</a>
                             <a href="tel:+80665554100" class="phonecontacts__phone">+380 (66) 555 41 00</a>
-                            <div class='phonecontacts__call'>Перезвоните мне</div>
+                            <div class='phonecontacts__call'>
+                                <div class='phonecontacts__call_text'>Перезвоните мне</div>
+                                <svg class="phonecontacts__call_greenarrow">
+                                    <use xlink:href="icons/sprite.svg#greenarrow"></use>
+                                </svg>
+                            </div>
+
                         </div>
                     </div>
                     <div class='col-xl-2'>
@@ -44,37 +50,37 @@
                     <div class='col-xl-2'>
                         <div class='header__follow'>
                             <div class='header__follow_text'>Следите за нами</div>
-                            <div class='header__follow_icon'>
+                            <div class='header__social'>
                                 <a href='#'>
-                                    <svg class="icon">
+                                    <svg class="header__social_inst">
                                         <use xlink:href="icons/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
                                 <a href='#'>
-                                    <svg class="icon">
-                                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                                    <svg class="header__social_youtube">
+                                        <use xlink:href="icons/sprite.svg#youtube"></use>
                                     </svg>
                                 </a>
                                 <a href='#'>
-                                    <svg class="icon">
-                                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                                    <svg class="header__social_facebook">
+                                        <use xlink:href="icons/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class='col-xl-2'>
+                    <div class='col-xl-2 d-flex align-self-center'>
                         <div class='header__search'>
                             <a href='#'>
-                                <svg class="icon">
-                                    <use xlink:href="icons/sprite.svg#instagram"></use>
+                                <svg class="header__search_icon">
+                                    <use xlink:href="icons/sprite.svg#search"></use>
                                 </svg>
                             </a>
-                            <a href='#' class='header__search'>Поиск</a>
+                            <a href='#' class='header__search_text'>Поиск</a>
                         </div>
                     </div>
-                    <div class='col-xl-2'>
-                        <button type="button" class="btn btn-warning">Записаться на прием</button>
+                    <div class='col-xl-2 d-flex align-self-center justify-content-end right'>
+                        <button type="button" class="btn btn-warning header__btn">Записаться на прием</button>
                     </div>
                 </div>
             </div>

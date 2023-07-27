@@ -1,0 +1,28 @@
+@media (max-width: 1400px)  {
+  .header {
+    &__btn {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+
+}
