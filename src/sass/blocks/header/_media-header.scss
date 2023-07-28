@@ -39,23 +39,9 @@
   }
   .header {
     min-height: 72px;
-    &__logo {
-      //display: block;
-    }
     &__md {
       display: block;
       padding-top: 23px;
-    }
-    &__md-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    &__contact {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 85px;
     }
     &__callback {
       width: 28px;

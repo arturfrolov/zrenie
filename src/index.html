@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Zrenie</title>
 </head>
 <body>
     <header class='header'>
@@ -77,14 +77,18 @@
         </div>
         <div class='header__md'>
             <div class='container'>
-                <div class='header__md-wrapper'>
-                    <a href='#' class='header__logo'>
-                        <img src='./icons/logo.svg' alt='logo'>
-                    </a>
-                    <div class='header__contact'>
+                <div class='row align-items-center justify-content-between'>
+                    <div class='col-auto order-2 col-sm-4 order-md-1 col-md-3 d-flex justify-content-start'>
+                        <a href='#' class='header__logo'>
+                            <img src='./icons/logo.svg' alt='logo'>
+                        </a>
+                    </div>
+                    <div class='col-auto order-1 col-sm-1 order-md-2 offset-md-7 col-md-1d-flex justify-content-end'>
                         <svg class="header__callback">
                             <use xlink:href="icons/sprite.svg#phone"></use>
                         </svg>
+                    </div>
+                    <div class='col-auto order-3 col-sm-1 order-md-3 col-md-1d-flex justify-content-end'>
                         <div class='hamburger'>
                             <span></span>
                             <span></span>
@@ -108,7 +112,6 @@
                     <li class='menu__item'>Контакты</li>
                 </ul>
             </div>
-
         </nav>
     </header>
 </body>
