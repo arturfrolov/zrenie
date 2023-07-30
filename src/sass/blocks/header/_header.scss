@@ -20,24 +20,34 @@
     display: block;
   }
   .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-bottom: 0;
-    padding: 25px 0 25px 0;
-    border-top: solid 1px #FFF;
     color: #F8F9FA;
     font-size: 18px;
     font-weight: 400;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      border-top: solid 1px #FFF;
+      margin-bottom: 0;
+      padding: 25px 0;
+    }
     &__item {
       position: relative;
       cursor: pointer;
-      transition: all .3s;
-      &:hover {
-        font-weight: 500;
-        scale: 110%;
+      a {
+        color: #F8F9FA;
       }
+    }
+    &.active {
+      left: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+    &__logo {
+      display: none;
+    }
+    &__list-item {
+      display: none;
     }
   }
   &__follow {
@@ -66,14 +76,8 @@
     }
   }
   &__search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     &_text {
-      font-size: 24px;
-      font-weight: 400;
       margin-left: 16px;
-      cursor: pointer;
     }
     &_icon {
       width: 37px;
@@ -86,19 +90,5 @@
   &__btn {
     position: relative;
     width: 190px;
-    height: 52px;
-    border-radius: 0;
-    background-color: #E0FA00;
-    color: #000547;
-    font-family: Gotham Pro;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    transition: all .3s;
-    &:hover {
-      box-shadow: 0 0.5em 0.5em -0.4em;
-      transform: translateY(-0.25em);
-    }
   }
 }

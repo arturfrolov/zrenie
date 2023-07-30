@@ -21,7 +21,7 @@
                         <div class='phonecontacts'>
                             <a href="tel:+80985554100" class="phonecontacts__phone">+380 (98) 555 41 00</a>
                             <a href="tel:+80665554100" class="phonecontacts__phone">+380 (66) 555 41 00</a>
-                            <div class='phonecontacts__call'>
+                            <div class='phonecontacts__call' data-bs-toggle="modal" data-bs-target="#myModal">
                                 <div class='phonecontacts__call_text'>Перезвоните мне</div>
                                 <svg class="phonecontacts__call_greenarrow">
                                     <use xlink:href="icons/sprite.svg#greenarrow"></use>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class='col-xl-2 col-lg-2 d-flex align-self-center'>
-                        <div class='header__search'>
+                        <div class='search header__search'>
                             <a href='#'>
                                 <svg class="header__search_icon">
                                     <use xlink:href="icons/sprite.svg#search"></use>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class='col-xl-2 col-lg-2 d-flex align-self-center justify-content-end'>
-                        <button type="button" class="btn btn-warning header__btn">Записаться на прием</button>
+                        <button type="button" class="btn btn-warning button header__btn" data-bs-toggle="modal" data-bs-target="#myModal">Записаться на прием</button>
                     </div>
                 </div>
             </div>
@@ -83,12 +83,12 @@
                             <img src='./icons/logo.svg' alt='logo'>
                         </a>
                     </div>
-                    <div class='col-auto order-1 col-sm-1 order-md-2 offset-md-7 col-md-1d-flex justify-content-end'>
-                        <svg class="header__callback">
+                    <div class='col-auto order-1 col-sm-1 order-md-2 offset-md-7 col-md-1'>
+                        <svg class="header__callback" data-bs-toggle="modal" data-bs-target="#myModal">
                             <use xlink:href="icons/sprite.svg#phone"></use>
                         </svg>
                     </div>
-                    <div class='col-auto order-3 col-sm-1 order-md-3 col-md-1d-flex justify-content-end'>
+                    <div class='col-auto order-3 col-sm-1 order-md-3 col-md-1 d-flex justify-content-end'>
                         <div class='hamburger'>
                             <span></span>
                             <span></span>
@@ -98,21 +98,67 @@
                 </div>
             </div>
         </div>
-        <nav>
-            <div class='container'>
-                <ul class='menu'>
-                    <li class='menu__item'>Заболевания</li>
-                    <li class='menu__item'>Услуги</li>
-                    <li class='menu__item'>Больницы</li>
-                    <li class='menu__item'>Врачи</li>
-                    <li class='menu__item'>Цены</li>
-                    <li class='menu__item'>Отзывы</li>
-                    <li class='menu__item'>Блог</li>
-                    <li class='menu__item'>О сервисе</li>
-                    <li class='menu__item'>Контакты</li>
-                </ul>
+        <div class='menu'>
+            <div class='menu__block'>
+                <div class='container p-0'>
+                    <nav>
+                        <ul class='menu__list'>
+                            <li class='menu__logo'>
+                                <a href='#'>
+                                    <img src='./icons/logoblue.svg' alt='logo'>
+                                </a>
+                            </li>
+                            <li class='menu__item'><a href='#'>Заболевания</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Услуги</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Больницы</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Врачи</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Цены</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Отзывы</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Блог</a><span></span></li>
+                            <li class='menu__item'><a href='#'>О сервисе</a><span></span></li>
+                            <li class='menu__item'><a href='#'>Контакты</a><span></span></li>
+                            <li class='menu__list-item'>
+                                <div class='search menu__search'>
+                                    <a href='#'>
+                                        <svg class="header__search_icon">
+                                            <use xlink:href="icons/sprite.svg#searchgreen"></use>
+                                        </svg>
+                                    </a>
+                                    <a href='#' class='header__search_text'>Поиск</a>
+                                </div>
+                                <button type="button" class="btn btn-warning button menu__btn" data-bs-toggle="modal" data-bs-target="#myModal">Записаться на прием</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </nav>
+            <div class='menu__close'></div>
+            <div class='overlay'></div>
+        </div>
     </header>
+    <footer></footer>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Мы свяжемся с вами как можно быстрее!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-3">
+                            <input required placeholder="Ваше имя" name="name" type="text" class="form-control modal__input" aria-label="Имя">
+                        </div>
+                        <div class="mb-3">
+                            <input required placeholder="Ваш номер телефона" name="phone" type="tel" class="form-control modal__input">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn_dark btn_min">Перезвонить мне</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
