@@ -136,16 +136,121 @@
             <div class='overlay'></div>
         </div>
     </header>
-    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <nav class='pagenav' style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
         <div class='container'>
-            <ol class="breadcrumb">
+            <ol class="breadcrumb mb-0 pt-3">
                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Блог</li>
-                <li class="breadcrumb-item active" aria-current="page">Новости</li>
-                <li class="breadcrumb-item active" aria-current="page">Всемирный доклад о проблемах здоровья</li>
+                <li class="breadcrumb-item"><a href="#">Блог</a></li>
+                <li class="breadcrumb-item"><a href="#">Новости</a></li>
+                <li class="breadcrumb-item active colorgray" aria-current="page">Всемирный доклад о проблемах здоровья</li>
             </ol>
         </div>
     </nav>
+    <section class='report'>
+        <div class='container'>
+            <div class='row'>
+                <div class='offset-1 col-10'>
+                    <h1 class='title report__title'>Всемирный доклад о проблемах здоровья</h1>
+                </div>
+                <div class='offset-1 col-3 mt-3 d-flex'>
+                    <div class='report__chapter'>Новости</div>
+                    <div class='report__date'>23 февраля 2020</div>
+                </div>
+                <div class='offset-1 col-10 mt-4'>
+                    <div class='report__img'>
+                        <picture>
+                            <source media="(max-width: 575px)" srcset='./img/main-small.jpg'>
+                            <source media="(min-width: 576px)" srcset='./img/main-medium.jpg'>
+                            <source media="(min-width: 992px)" srcset='./img/main.jpg'>
+                            <img src="img/main.jpg" alt="photo">
+                        </picture>
+                    </div>
+                </div>
+                <div class='offset-1 col-10 mt-5'>
+                    <div class='report__descr'>
+                        На нашей планете проживает менее 8 миллиардов людей, из которых у 2,2 млрд. нарушено зрение. Причиной могло быть врожденное или приобретенное заболевание, которое у некоторых привело к слепоте. По сути, каждый третий имеет недостаточное зрение. И почти у половины это произошло по разным причинам.
+                    </div>
+                </div>
+                <div class='offset-1 col-1 mt68'>
+                    <div class='social'>
+                        <a class='social__link' href='#'>
+                            <svg class="social__facebook">
+                                <use xlink:href="icons/sprite.svg#facebook-blue"></use>
+                            </svg>
+                        </a>
+                        <a class='social__link' href='#'>
+                            <svg class="social__pinterest">
+                                <use xlink:href="icons/sprite.svg#pinterest"></use>
+                            </svg>
+                        </a>
+                        <div class='social__link social_plus'></div>
+                    </div>
+                </div>
+                <div class='col-8 mt68'>
+                    <h4 class='subtitle report__subtitle'>Основные факторы роста числа людей с недостаточным зрением:
+                    </h4>
+                    <ul class='report__list'>
+                        <li class='report__list-item'>Старение населения</li>
+                        <li class='report__list-item'>Изменение образа жизни</li>
+                        <li class='report__list-item'>Ограниченный доступ к офтальмологической помощи</li>
+                    </ul>
+                </div>
+                <div class='offset-2 col-8 mt30'>
+                    <h4 class='subtitle report__subtitle'>Вопрос можно частично решить при помощи:
+                    </h4>
+                    <ul class='report__list'>
+                        <li class='report__list-item'>Лупы</li>
+                        <li class='report__list-item'>Обучением чтению шрифтом Брайля</li>
+                        <li class='report__list-item'>Ориентации на местности и передвижению с использованием трости</li>
+                        <li class='report__list-item'>Создание приложений для слабовидящих</li>
+                    </ul>
+                </div>
+                <div class='offset-2 col-3 mt-5 d-flex'>
+                    <div class='report__text'>
+                        65 миллионов человек страдают слепотой. Это могло быть населением целой страны. При этом вылечить людей можно было бы за 1 день (если причина нарушения зрения, например, катаракта). К сожалению, 800 миллионов людей на планете не могут позволить себе приобретение очков.
+                    </div>
+                </div>
+                <div class='offset-1 col-4 mt53'>
+                    <div class='report__infographic'>
+                        <div class='report__item'>
+                            <div class='report__icon'>
+                                <svg class="report__icon_british">
+                                    <use xlink:href="icons/sprite.svg#britishppl"></use>
+                                </svg>
+                            </div>
+                            <div class='report__item-descr'>
+                                <div class='report__item-subheader'>65 000 000</div>
+                                <div class='report__item-text'>человек слепые</div>
+                            </div>
+                        </div>
+                        <div class='report__item mt14'>
+                            <div class='report__icon'>
+                                <svg class="report__icon_calendar">
+                                    <use xlink:href="icons/sprite.svg#calendar"></use>
+                                </svg>
+                            </div>
+                            <div class='report__item-descr'>
+                                <div class='report__item-subheader'>за 1 день</div>
+                                <div class='report__item-text'>можно вылечить катаракту</div>
+                            </div>
+                        </div>
+                        <div class='report__item mt40'>
+                            <div class='report__icon'>
+                                <svg class="report__icon_glasses">
+                                    <use xlink:href="icons/sprite.svg#glasses"></use>
+                                </svg>
+                            </div>
+                            <div class='report__item-descr'>
+                                <div class='report__item-subheader'>800 000 000</div>
+                                <div class='report__item-text'>людей не могут купить очки</div>
+                            </div>
+                        </div>
+                        <img class='report__logo' src='./icons/littlelogo.svg' alt='logo'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">

@@ -1,0 +1,144 @@
+.report {
+  padding: 57px 0 65px 0;
+  font-family: Acme, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #F8F9FA;
+  &__title {
+    font-size: 45px;
+    line-height: 54px;
+  }
+  &__chapter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 29px;
+    background-color: var(--btn-color);
+    color: var(--blue-text);
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 14px;
+    color: #BDBDBD;
+    font-size: 16px;
+    line-height: 100%;
+  }
+  &__img {
+    padding-top: 52px;
+    border-top: solid 1px var(--blue-text);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__descr {
+    color: #001F2F;
+    font-size: 25px;
+    line-height: 140%;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--blue-text);
+      &:nth-child(even) {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    &__facebook {
+      width: 24px;
+      height: 24px;
+    }
+    &__pinterest {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    &-item {
+      color: #001F2F;
+      font-size: 16px;
+      line-height: 42px;
+      &:nth-child(1) {
+        margin-top: 8px;
+      }
+      &:before {
+        content: "\2217";
+        font-family: Gotham Pro, sans-serif;
+        font-size: 16px;
+        color: #0833C5;
+        font-weight: 700;
+        line-height: 150%;
+        padding-right: 9px;
+      }
+    }
+  }
+  &__text {
+    color: #001F2F;
+    font-size: 16px;
+    line-height: 200%;
+  }
+  &__infographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 16px 0;
+    border-top: solid 3px #0833C5;
+    background-color: #FFF;
+  }
+  &__item {
+    display: flex;
+    &-descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-subheader {
+      font-family: Gotham Pro, sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    &-text {
+      font-family: Gotham Pro, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+  }
+  &__icon {
+    &_british {
+      margin-right: 6px;
+      width: 99px;
+      height: 131px;
+    }
+    &_calendar {
+      margin-right: 22px;
+      width: 53px;
+      height: 50px;
+    }
+    &_glasses {
+      margin-right: 18px;
+      width: 57px;
+      height: 55px;
+    }
+  }
+  &__logo {
+    margin-top: 60px;
+  }
+}

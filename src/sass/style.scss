@@ -1,18 +1,18 @@
-@import 'libs/font';
 @import 'libs/bootstrap';
+@import 'libs/font';
 @import './variables/variables';
-@import './base.scss';
+@import './base';
 
 @import './blocks/button/button';
+@import './blocks/title/title';
+@import './blocks/subtitle/subtitle';
 @import './blocks/header/header';
 @import './blocks/phonecontacts/phonecontacts';
 @import './blocks/schedule/schedule';
+@import './blocks/pagenav/pagenav';
+@import './blocks/report/report';
 
-//@import './blocks/offer/offer';
-//@import './blocks/calculating/calculating';
-//@import './blocks/menu/menu';
-//@import './blocks/order/order';
-//@import './blocks/promotion/promotion';
-//@import './blocks/footer/footer';
-//@import './blocks/modal/modal';
+
 @import './blocks/header/media-header';
+@import './blocks/pagenav/pagenav-media';
+@import './blocks/report/report-media';

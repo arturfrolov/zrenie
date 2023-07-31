@@ -77,7 +77,7 @@
         width: 280px;
         height: 100vh;
         z-index: 10;
-        color: #000547;
+        color: var(--blue-text);
         font-family: Acme, sans-serif;
         font-size: 18px;
 
@@ -101,7 +101,7 @@
         padding: 16px 23px 18px 23px;
         border-bottom: solid 1px #F8F9FA;
         a {
-          color: #000547;
+          color: var(--blue-text);
         }
         span {
           position: relative;
@@ -152,7 +152,7 @@
         height: 59px;
         border-top: solid 1px #F8F9FA;
         a {
-          color: #000547;
+          color: var(--blue-text);
         }
       }
       &__btn {
@@ -179,7 +179,7 @@
           width: 21px;
           height: 2px;
           position: absolute;
-          background-color: #000547;
+          background-color: var(--blue-text);
           transform: rotate(-45deg)
         }
         &:after {
@@ -188,7 +188,7 @@
           height: 2px;
           position: absolute;
           display: block;
-          background-color: #000547;
+          background-color: var(--blue-text);
           transform: rotate(45deg);
         }
       }
