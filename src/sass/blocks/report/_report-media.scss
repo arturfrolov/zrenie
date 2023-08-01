@@ -1,0 +1,108 @@
+@media (max-width: 1400px)  {
+
+}
+
+@media (max-width: 1199px) {
+  .report {
+    &__infographic {
+      width: 100%;
+    }
+    &__item {
+      padding-left: 57px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .report {
+    padding-top: 41px;
+    &__title {
+      font-size: 41px;
+      line-height: 45px;
+    }
+    &__descr {
+      font-size: 24px;
+    }
+    &__img {
+      padding-top: 41px;
+    }
+    &__list-item {
+      line-height: 36px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .report {
+    padding-top: 31px;
+    &__title {
+      font-size: 32px;
+      line-height: normal;
+    }
+    &__chapter {
+      font-size: 15px;
+    }
+    &__date {
+      font-size: 15px;
+    }
+    &__img {
+      padding-top: 27px;
+    }
+    &__descr {
+      font-size: 20px;
+    }
+    .mt53 {
+      margin-top: 41px;
+    }
+    &__item {
+      padding-left: 99px;
+      &-subheader {
+        font-size: 27px;
+        line-height: 27px;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .report {
+    &__title {
+      font-size: 30px;
+    }
+    .report__item {
+      padding-left: 16%;
+      &-subheader {
+        font-size: 22px;
+        line-height: 27px;
+      }
+      &-text {
+        font-size: 10px;
+        line-height: 18px;
+      }
+    }
+    &__icon {
+      &_british {
+        width: 72px;
+        height: 96px;
+      }
+      &_calendar {
+        margin-left: 20px;
+        width: 39px;
+        height: 30px;
+      }
+      &_glasses {
+        margin-left: 20px;
+        width: 42px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+
+}

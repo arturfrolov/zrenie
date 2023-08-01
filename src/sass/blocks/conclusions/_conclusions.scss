@@ -1,0 +1,68 @@
+.conclusions {
+  padding-top: 65px;
+  background-color: #F8F9FA;
+  color: #001F2F;
+  font-family: Gotham Pro, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  &__list-item {
+    span {
+      color: #0833C5;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  &__problems {
+    display: grid;
+    grid-template-columns: repeat(3, 185px);
+    grid-template-rows: minmax(115px, auto) minmax(115px, auto);
+    grid-auto-rows: minmax(115px, auto);
+    gap: 50px 43px;
+    width: 100%;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 62px;
+    border-top: solid 3px #0833C5;
+    &-item {
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &-text {
+      font-size: 14px;
+      text-align: center;
+    }
+    &-house {
+      width: 109px;
+      height: 77px;
+    }
+    &-poor {
+      width: 66px;
+      height: 71px;
+    }
+    &-women {
+      width: 63px;
+      height: 70px;
+    }
+    &-elderly {
+      width: 75px;
+      height: 69px;
+    }
+    &-invalids {
+      width: 69px;
+      height: 72px;
+    }
+    &-ethnic {
+      width: 55px;
+      height: 75px;
+    }
+  }
+  &__logo {
+    align-self: center;
+  }
+}
