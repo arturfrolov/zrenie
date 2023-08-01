@@ -1,13 +1,54 @@
 @media (max-width: 1400px)  {
-
+  .conclusions {
+    &__help {
+      column-gap: 10px;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
-
+  .conclusions {
+    &__problems {
+      gap: 50px 25px;
+    }
+    &__help {
+      grid-template-columns: repeat(2, 302px);
+      column-gap: 10px;
+      &-item {
+        flex-direction: column;
+      }
+      &-descr {
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
+  .conclusions {
+    &__problems {
+      gap: 50px 43px;
+    }
+    &__help {
+      grid-template-columns: repeat(2, 333px);
+      column-gap: 20px;
+      &-item {
+        flex-direction: row;
+      }
+      &-descr {
+        padding-top: 0;
+        text-align: inherit;
+      }
+      &-subheader {
+        font-size: 27px;
+      }
+      &-text {
+        font-size: 13px;
 
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {

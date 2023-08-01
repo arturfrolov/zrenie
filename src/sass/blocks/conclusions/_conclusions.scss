@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding-top: 62px;
+    padding: 62px 0 16px 0;
     border-top: solid 3px #0833C5;
     &-item {
       svg {
@@ -63,15 +63,57 @@
       width: 55px;
       height: 75px;
     }
-  }
-  &__logo {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    &-logo {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
   }
   &__help {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 363px);
+    grid-template-rows: minmax(85px, auto);
+    grid-auto-rows: minmax(auto, auto);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 50px 0 12px 0;
+    border-top: solid 3px #0833C5;
+    column-gap: 49px;
+    row-gap: 26px;
     width: 100%;
-    height: 184px;
     background-color: #FFF;
+    &-item {
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
+    &-icon {
+      padding-right: 10px;
+    }
+    &-money {
+      width: 67px;
+      height: 49px;
+    }
+    &-africappl {
+      width: 76px;
+      height: 85px;
+    }
+    &-descr {
+
+    }
+    &-subheader {
+      font-size: 29px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+    &-logo {
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
   }
 }

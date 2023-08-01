@@ -1,12 +1,13 @@
 .report {
   padding-top: 57px;
-  font-family: Acme;
+  font-family: Acme, sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: #F8F9FA;
   &__title {
     font-size: 45px;
     line-height: 54px;
+    font-weight: 400;
   }
   &__chapter {
     display: flex;
