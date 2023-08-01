@@ -8,17 +8,19 @@
   font-weight: 400;
   line-height: 150%;
   &__list-item {
+    display: flex;
     span {
       color: #0833C5;
       font-size: 18px;
       font-weight: 500;
+      padding-right: 5px;
     }
   }
   &__problems {
     display: grid;
     grid-template-columns: repeat(3, 185px);
     grid-template-rows: minmax(115px, auto) minmax(115px, auto);
-    grid-auto-rows: minmax(115px, auto);
+    grid-auto-rows: minmax(auto, auto);
     gap: 50px 43px;
     width: 100%;
     background-color: #FFF;
@@ -63,6 +65,13 @@
     }
   }
   &__logo {
-    align-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  &__help {
+    display: flex;
+    width: 100%;
+    height: 184px;
+    background-color: #FFF;
   }
 }
