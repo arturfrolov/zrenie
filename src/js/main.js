@@ -18,7 +18,7 @@ close.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-  let viewport_width = Math.max(
+  const viewport_width = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
   );
