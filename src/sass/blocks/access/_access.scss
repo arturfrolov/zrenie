@@ -1,10 +1,87 @@
 .access {
+  color: #001F2F;
+  font-family: Gotham Pro, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   padding-top: 70px;
   background-color: #F8F9FA;
-  &__subheader {
-    margin-top: 10px;
+  &__help {
+    display: grid;
+    grid-template-columns: repeat(4, 142px);
+    grid-template-rows: minmax(103px, auto);
+    grid-auto-rows: minmax(auto, auto);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: baseline;
+    row-gap: 18px;
+    padding: 39px 0 12px 0;
+    background-color: #FFF;
+    border-top: solid 3px #0833C5;
+    &-item {
+
+    }
+    &-logo {
+      grid-column: 1/5;
+      grid-row: 2/3;
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &-text {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+    &-prevention {
+      width: 69px;
+      height: 67px;
+    }
+    &-diagnosis {
+      width: 61px;
+      height: 61px;
+    }
+    &-curing {
+      width: 72px;
+      height: 50px;
+    }
+    &-rehabilitation {
+      width: 64px;
+      height: 43px;
+    }
   }
   &__quote {
-    margin-top: 50px;
+    margin-top: 98px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 220px;
+      top: -34px;
+      left: -26px;
+      background-color: #000547;
+    }
+    &-text {
+      font-size: 26px;
+      line-height: 140%;
+    }
+    &-author {
+      color: rgba(0, 31, 47, 0.50);
+      line-height: 22px;
+      margin-top: 25px;
+      div {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    &-descr {
+      margin-top: 44px;
+    }
   }
 }
