@@ -1,6 +1,6 @@
-@import 'libs/bootstrap';
+@import 'variables';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import 'libs/font';
-@import './variables/variables';
 @import './base';
 
 @import './blocks/button/button';
