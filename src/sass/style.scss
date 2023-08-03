@@ -1,7 +1,9 @@
 @import './base';
 @import 'variables';
-@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+//@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/scss/bootstrap';
 @import 'libs/font';
+
 
 @import './blocks/button/button';
 @import './blocks/title/title';

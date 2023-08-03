@@ -24,8 +24,12 @@ module.exports = {
     clean: true,
     // path: __dirname + '/dist/js'
     // assetModuleFilename: '[path][name][ext]',
-    assetModuleFilename: pathData => {
-      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+    assetModuleFilename: (pathData) => {
+      const filepath = path
+        .dirname(pathData.filename)
+        .split('/')
+        .slice(1)
+        .join('/');
       return `${filepath}/[name][ext]`;
     },
   },
@@ -54,6 +58,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
+                // eslint-disable-next-line global-require
                 plugins: [require('postcss-preset-env')],
               },
             },
@@ -87,9 +92,11 @@ module.exports = {
                 options: {
                   mozjpeg: {
                     progressive: true,
+                    quality: 75,
                   },
                   optipng: {
                     enabled: false,
+                    optimizationLevel: 3,
                   },
                   pngquant: {
                     quality: [0.65, 0.9],
@@ -97,6 +104,7 @@ module.exports = {
                   },
                   gifsicle: {
                     interlaced: false,
+                    optimizationLevel: 2,
                   },
                   webp: {
                     quality: 75,
