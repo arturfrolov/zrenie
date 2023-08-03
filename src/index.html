@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class='header'>
-        <div class='header__subheader md-hidden'>
+        <div class='header__subheader'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-xl-2 col-lg-2 d-flex align-self-center'>
@@ -89,7 +89,7 @@
                         </svg>
                     </div>
                     <div class='col-auto order-3 col-sm-1 order-md-3 col-md-1 d-flex justify-content-end'>
-                        <div class='hamburger'>
+                        <div class='hamburger js-hamburger'>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -154,18 +154,20 @@
                     </nav>
                 </div>
             </div>
-            <div class='menu__close'></div>
+            <div class='menu__close js-menu__close'></div>
             <div class='overlay'></div>
         </div>
     </header>
     <nav class='pagenav' style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
         <div class='container'>
-            <ol class="breadcrumb mb-0 pt-3">
-                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                <li class="breadcrumb-item"><a href="#">Блог</a></li>
-                <li class="breadcrumb-item"><a href="#">Новости</a></li>
-                <li class="breadcrumb-item active colorgray" aria-current="page">Всемирный доклад о проблемах здоровья</li>
-            </ol>
+            <div class='row'>
+                <ol class="breadcrumb mb-0 pt-3">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Блог</a></li>
+                    <li class="breadcrumb-item"><a href="#">Новости</a></li>
+                    <li class="breadcrumb-item active colorgray" aria-current="page">Всемирный доклад о проблемах здоровья</li>
+                </ol>
+            </div>
         </div>
     </nav>
     <section class='report'>
@@ -281,7 +283,7 @@
                 </div>
                 <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-5'>
                     <div class='conclusions__list-item'>
-                        <div><span>1.</span></div>
+                        <div class='conclusions__list-item-num'>1.</div>
                         <div>Проблем с нарушениями зрения больше среди людей:</div>
                     </div>
                 </div>
@@ -352,19 +354,19 @@
                 </div>
                 <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-4'>
                     <div class='conclusions__list-item'>
-                        <div><span>2.</span></div>
+                        <div class='conclusions__list-item-num'>2.</div>
                         <div>Качество офтальмологического лечения близорукости в регионах с низким и  средним уровнем дохода в 4 раза ниже, чем в регионах с высоким уровнем.</div>
                     </div>
                 </div>
                 <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-4'>
                     <div class='conclusions__list-item'>
-                        <div><span>3.</span></div>
+                        <div class='conclusions__list-item-num'>3.</div>
                         <div>Распространенность слепоты в странах Африки в 8 раз выше, чем в странах с высоким уровнем дохода. Статистика заболеваемости катаракты и трахоматозного трихиаза выше у женщин.</div>
                     </div>
                 </div>
                 <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-4'>
                     <div class='conclusions__list-item'>
-                        <div><span>4.</span></div>
+                        <div class='conclusions__list-item-num'>4.</div>
                         <div>Для оказания адресной офтальмологической помощи 1 миллиарду людей, страдающих близорукостью, дальнозоркостью или слепотой, вызванной катарактой, нужно 14,3 миллиардов долларов США.</div>
                     </div>
                 </div>
@@ -402,55 +404,57 @@
     </section>
     <section class='impairment'>
         <div class='container'>
-            <div class='offset-lg-2 col-lg-8'>
-                <h2 class='title impairment__title'>
-                    Почему число случаев нарушений зрения растет?
-                </h2>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-3 mt-md-4 mt-lg-5'>
-                <h4 class='subtitle impairment__subtitle'>
-                    Какие заболевания непосредственно приводят к слепоте:
-                </h4>
-                <ul class='impairment__listnum mt-3'>
-                    <li class='impairment__listnum-item'>
-                        <a href='#'>Катаракта</a>
-                    </li>
-                    <li class='impairment__listnum-item mt-2'>
-                        <a href='#'>Трахома</a>
-                    </li>
-                    <li class='impairment__listnum-item mt-2'>
-                        <a href='#'>Нарушения рефракции</a>
-                    </li>
-                </ul>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-3'>
-                <div class='impairment__text'>
-                    В то же время существует немало болезней, которые не должны оставаться без внимания и должного лечения, такие как, сухость глаз, конъюнктивит. С учетом демографического роста и постепенного повышения средней продолжительности жизни, можно ожидать увеличение общего числа людей с глазными болезнями.
+            <div class='row'>
+                <div class='offset-lg-2 col-lg-8'>
+                    <h2 class='title impairment__title'>
+                        Почему число случаев нарушений зрения растет?
+                    </h2>
                 </div>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-5'>
-                <h4 class='subtitle impairment__subtitle '>
-                    Основные факторы самых распространенных глазных заболеваний:
-                </h4>
-                <div class='impairment__liststar mt-3'>
-                    <div class='impairment__liststar-item'>
-                        <div class='star'></div>
-                        <div class='impairment__liststar-text'>
-                            <span>Миопия (близорукость)</span>
-                            развивается в связи с большими зрительными нагрузками. Проводя много времени в помещении и взаимодействуя с близко расположенными предметами, усугубляется течение заболевания. Для снижения риска болезни рекомендуется больше времени проводить на улице.
-                        </div>
+                <div class='offset-lg-2 col-lg-8 mt-3 mt-md-4 mt-lg-5'>
+                    <h4 class='subtitle impairment__subtitle'>
+                        Какие заболевания непосредственно приводят к слепоте:
+                    </h4>
+                    <ul class='impairment__listnum mt-3'>
+                        <li class='impairment__listnum-item'>
+                            <a href='#'>Катаракта</a>
+                        </li>
+                        <li class='impairment__listnum-item mt-2'>
+                            <a href='#'>Трахома</a>
+                        </li>
+                        <li class='impairment__listnum-item mt-2'>
+                            <a href='#'>Нарушения рефракции</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='offset-lg-2 col-lg-8 mt-3'>
+                    <div class='impairment__text'>
+                        В то же время существует немало болезней, которые не должны оставаться без внимания и должного лечения, такие как, сухость глаз, конъюнктивит. С учетом демографического роста и постепенного повышения средней продолжительности жизни, можно ожидать увеличение общего числа людей с глазными болезнями.
                     </div>
-                    <div class='impairment__liststar-item mt-3'>
-                        <div class='star'></div>
-                        <div class='impairment__liststar-text'>
-                            <span>Диабетическая ретинопатия</span>
-                            является следствием сахарного диабета, который появляется почти у всех больных. Регулярные проверки, получение качественной медицинской помощи могут защитить людей от заболевания сетчатки.
+                </div>
+                <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-5'>
+                    <h4 class='subtitle impairment__subtitle '>
+                        Основные факторы самых распространенных глазных заболеваний:
+                    </h4>
+                    <div class='impairment__liststar mt-3'>
+                        <div class='impairment__liststar-item'>
+                            <div class='star'></div>
+                            <div class='impairment__liststar-text'>
+                                <span class='impairment__liststar-text_blue'>Миопия (близорукость)</span>
+                                развивается в связи с большими зрительными нагрузками. Проводя много времени в помещении и взаимодействуя с близко расположенными предметами, усугубляется течение заболевания. Для снижения риска болезни рекомендуется больше времени проводить на улице.
+                            </div>
                         </div>
-                    </div>
-                    <div class='impairment__liststar-item mt-3'>
-                        <div class='star'></div>
-                        <div class='impairment__liststar-text'>
-                            Некачественная или несвоевременная диагностика не может обеспечить получение пациентом подходящего лечения. Зачастую, это полное отсутствие профилактики, которое приводит к выявлению болезни, находящейся уже в запущенной стадии.
+                        <div class='impairment__liststar-item mt-3'>
+                            <div class='star'></div>
+                            <div class='impairment__liststar-text'>
+                                <span class='impairment__liststar-text_blue'>Диабетическая ретинопатия</span>
+                                является следствием сахарного диабета, который появляется почти у всех больных. Регулярные проверки, получение качественной медицинской помощи могут защитить людей от заболевания сетчатки.
+                            </div>
+                        </div>
+                        <div class='impairment__liststar-item mt-3'>
+                            <div class='star'></div>
+                            <div class='impairment__liststar-text'>
+                                Некачественная или несвоевременная диагностика не может обеспечить получение пациентом подходящего лечения. Зачастую, это полное отсутствие профилактики, которое приводит к выявлению болезни, находящейся уже в запущенной стадии.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -459,83 +463,85 @@
     </section>
     <section class='access'>
         <div class='container'>
-            <div class='offset-lg-2 col-lg-8'>
-                <h2 class='title access__title'>
-                    Доступ к офтальмологической помощи
-                </h2>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-5'>
-                <div class='access__subheader'>
-                    Миллионы людей лишены возможности получать офтальмологическую помощь, в том числе:
+            <div class='row'>
+                <div class='offset-lg-2 col-lg-8'>
+                    <h2 class='title access__title'>
+                        Доступ к офтальмологической помощи
+                    </h2>
                 </div>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-3 mt-lg-4'>
-                <div class='access__help'>
-                    <div class='access__help-item'>
-                        <div class='access__help-logo'>
-                            <svg class="access__help-prevention">
-                                <use xlink:href="icons/sprite.svg#prevention"></use>
-                            </svg>
-                        </div>
-                        <div class='access__help-text'>
-                            Профилактические мероприятия
-                        </div>
-                    </div>
-                    <div class='access__help-item'>
-                        <div class='access__help-logo'>
-                            <svg class="access__help-diagnosis">
-                                <use xlink:href="icons/sprite.svg#diagnosis"></use>
-                            </svg>
-                        </div>
-                        <div class='access__help-text'>
-                            Раннюю диагностику
-                        </div>
-                    </div>
-                    <div class='access__help-item'>
-                        <div class='access__help-logo'>
-                            <svg class="access__help-curing">
-                                <use xlink:href="icons/sprite.svg#curing"></use>
-                            </svg>
-                        </div>
-                        <div class='access__help-text'>
-                            Лечение
-                        </div>
-                    </div>
-                    <div class='access__help-item'>
-                        <div class='access__help-logo'>
-                            <svg class="access__help-rehabilitation">
-                                <use xlink:href="icons/sprite.svg#rehabilitation"></use>
-                            </svg>
-                        </div>
-                        <div class='access__help-text'>
-                            Реабелитацию
-                        </div>
-                    </div>
-                    <img class="access__help-logo" src="icons/littlelogo.svg" alt="logo">
-                </div>
-            </div>
-            <div class='offset-lg-2 col-lg-8 mt-4'>
-                <div class='access__text'>
-                    Генеральный директор Всемирной Организации Здравоохранения (ВОЗ) Тедрос Адханом Гебрейесус отмечает, что отсутствие надлежащей офтальмологической помощи лишает людей возможности принимать активное участие в общественной жизни, получать доступ к реабилитационным услугам.
-                    По его мнению,
-                </div>
-            </div>
-            <div class='offset-lg-2 col-lg-8'>
-                <div class='access__quote'>
-                    <div class='access__quote-text'>
-                        Каждый больной должен иметь возможность получать офтальмологическую помощь без каких бы то ни было серьезных финансовых затрат.
-                    </div>
-                    <div class='access__quote-author'>
-                        <div>д-р Тедрос Адханом Гебрейесус</div>
-                        <span>Генеральный директор ВОЗ</span>
-                    </div>
-                    <div class='access__quote-descr'>
-                        Он предлагает, чтобы правительства стран в пакеты по базовому медицинскому обслуживанию обязательно включали офтальмологические услуги.
+                <div class='offset-lg-2 col-lg-8 mt-4 mt-lg-5'>
+                    <div class='access__subheader'>
+                        Миллионы людей лишены возможности получать офтальмологическую помощь, в том числе:
                     </div>
                 </div>
-            </div>
-            <div class='col-md-6 d-flex d-lg-none'>
-                <div class='social'></div>
+                <div class='offset-lg-2 col-lg-8 mt-3 mt-lg-4'>
+                    <div class='access__help'>
+                        <div class='access__help-item'>
+                            <div class='access__help-logo'>
+                                <svg class="access__help-prevention">
+                                    <use xlink:href="icons/sprite.svg#prevention"></use>
+                                </svg>
+                            </div>
+                            <div class='access__help-text'>
+                                Профилактические мероприятия
+                            </div>
+                        </div>
+                        <div class='access__help-item'>
+                            <div class='access__help-logo'>
+                                <svg class="access__help-diagnosis">
+                                    <use xlink:href="icons/sprite.svg#diagnosis"></use>
+                                </svg>
+                            </div>
+                            <div class='access__help-text'>
+                                Раннюю диагностику
+                            </div>
+                        </div>
+                        <div class='access__help-item'>
+                            <div class='access__help-logo'>
+                                <svg class="access__help-curing">
+                                    <use xlink:href="icons/sprite.svg#curing"></use>
+                                </svg>
+                            </div>
+                            <div class='access__help-text'>
+                                Лечение
+                            </div>
+                        </div>
+                        <div class='access__help-item'>
+                            <div class='access__help-logo'>
+                                <svg class="access__help-rehabilitation">
+                                    <use xlink:href="icons/sprite.svg#rehabilitation"></use>
+                                </svg>
+                            </div>
+                            <div class='access__help-text'>
+                                Реабелитацию
+                            </div>
+                        </div>
+                        <img class="access__help-logo" src="icons/littlelogo.svg" alt="logo">
+                    </div>
+                </div>
+                <div class='offset-lg-2 col-lg-8 mt-4'>
+                    <div class='access__text'>
+                        Генеральный директор Всемирной Организации Здравоохранения (ВОЗ) Тедрос Адханом Гебрейесус отмечает, что отсутствие надлежащей офтальмологической помощи лишает людей возможности принимать активное участие в общественной жизни, получать доступ к реабилитационным услугам.
+                        По его мнению,
+                    </div>
+                </div>
+                <div class='offset-lg-2 col-lg-8'>
+                    <div class='access__quote'>
+                        <div class='access__quote-text'>
+                            Каждый больной должен иметь возможность получать офтальмологическую помощь без каких бы то ни было серьезных финансовых затрат.
+                        </div>
+                        <div class='access__quote-author'>
+                            <div>д-р Тедрос Адханом Гебрейесус</div>
+                            <span>Генеральный директор ВОЗ</span>
+                        </div>
+                        <div class='access__quote-descr'>
+                            Он предлагает, чтобы правительства стран в пакеты по базовому медицинскому обслуживанию обязательно включали офтальмологические услуги.
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 d-flex d-lg-none'>
+                    <div class='social'></div>
+                </div>
             </div>
         </div>
     </section>

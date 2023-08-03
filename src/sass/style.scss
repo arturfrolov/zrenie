@@ -1,11 +1,11 @@
 @import './base';
 @import 'variables';
-//@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '~bootstrap/scss/bootstrap';
 @import 'libs/font';
 
 
 @import './blocks/button/button';
+@import './blocks/search/search';
 @import './blocks/title/title';
 @import './blocks/subtitle/subtitle';
 @import './blocks/header/header';

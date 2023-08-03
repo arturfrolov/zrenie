@@ -34,11 +34,11 @@
 }
 
 @media (max-width: 991px) {
-  .md-hidden {
-    display: none;
-  }
   .header {
     min-height: 72px;
+    &__subheader {
+      display: none;
+    }
     &__md {
       display: block;
       padding-top: 23px;
@@ -203,10 +203,6 @@
       }
     }
   }
-}
-
-@media (max-width: 767px) {
-
 }
 
 @media (max-width: 575px) {

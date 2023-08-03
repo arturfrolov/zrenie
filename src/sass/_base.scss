@@ -1,13 +1,5 @@
 @import "../../node_modules/normalize.css/normalize.css";
 
-.search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    font-weight: 400;
-}
 .mt68 {
     margin-top: 68px;
 }
@@ -32,3 +24,5 @@ $grid-breakpoints: (
         xl: 1115px,
         xxl: 1400px
 );
+
+$link-decoration: none;
