@@ -1,7 +1,7 @@
+@import './base';
 @import 'variables';
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import 'libs/font';
-@import './base';
 
 @import './blocks/button/button';
 @import './blocks/title/title';
@@ -14,7 +14,6 @@
 @import './blocks/conclusions/conclusions';
 @import './blocks/impairment/impairment';
 @import './blocks/access/access';
-
 
 @import './blocks/header/header-media';
 @import './blocks/pagenav/pagenav-media';

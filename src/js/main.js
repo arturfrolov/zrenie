@@ -1,6 +1,7 @@
 import 'bootstrap';
 import '../index.html';
 import '../sass/style.scss';
+import 'dotenv/config';
 
 // import modal from './modules/modal';
 

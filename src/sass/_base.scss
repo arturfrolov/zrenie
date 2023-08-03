@@ -1,6 +1,5 @@
-* {
-    //font-family: 'Acme', sans-serif;
-}
+@import "../../node_modules/normalize.css/normalize.css";
+
 .search {
     display: flex;
     flex-direction: row;
@@ -24,3 +23,12 @@
 a {
     text-decoration: none;
 }
+
+$grid-breakpoints: (
+        xs: 330px,
+        sm: 576px,
+        md: 750px,
+        lg: 992px,
+        xl: 1115px,
+        xxl: 1400px
+);

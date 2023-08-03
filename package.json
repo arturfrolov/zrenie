@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "set NODE_ENV=development&&webpack serve",
-    "build:dev": "set NODE_ENV=development&&webpack",
-    "build:prod": "set NODE_ENV=production&&webpack",
+    "start": "set NODE_ENV=development && webpack serve",
+    "build:dev": "set NODE_ENV=development && webpack",
+    "build:prod": "set NODE_ENV=production && webpack",
     "clean": "rd /s /q dist"
   },
   "author": "",
@@ -50,6 +50,8 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "dotenv": "^16.3.1",
+    "normalize.css": "^8.0.1"
   }
 }
