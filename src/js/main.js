@@ -19,14 +19,14 @@ close.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-  const viewport_width = Math.max(
+  const viewportWidth = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
   );
 
-  if (viewport_width < 992 && !container.classList.contains('p-0')) {
+  if (viewportWidth < 992 && !container.classList.contains('p-0')) {
     container.classList.add('p-0');
-  } else if (viewport_width >= 992 && container.classList.contains('p-0')) {
+  } else if (viewportWidth >= 992 && container.classList.contains('p-0')) {
     container.classList.remove('p-0');
   }
 });
