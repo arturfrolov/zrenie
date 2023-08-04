@@ -11,6 +11,9 @@
 
 @media (max-width: 991px) {
   .report {
+    &__factor {
+      margin-top: 50px;
+    }
     padding-top: 41px;
     &__title {
       font-size: 41px;
