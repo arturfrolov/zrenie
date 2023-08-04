@@ -158,18 +158,20 @@
             <div class='overlay'></div>
         </div>
     </header>
-    <nav class='pagenav' aria-label="breadcrumb">
+    <div class='pagenav'>
         <div class='container'>
             <div class='row'>
-                <ol class="breadcrumb mb-0 pt-3">
-                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item"><a href="#">Блог</a></li>
-                    <li class="breadcrumb-item"><a href="#">Новости</a></li>
-                    <li class="breadcrumb-item active colorgray" aria-current="page">Всемирный доклад о проблемах здоровья</li>
-                </ol>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 pt-3">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Блог</a></li>
+                        <li class="breadcrumb-item"><a href="#">Новости</a></li>
+                        <li class="breadcrumb-item active colorgray" aria-current="page">Всемирный доклад о проблемах здоровья</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
     <section class='report'>
         <div class='container'>
             <div class='row justify-content-center'>
@@ -196,7 +198,7 @@
                     </div>
                 </div>
                 <div class='col-12 col-lg-10 mt-4 mt-md-5 d-flex'>
-                    <div class='social d-none d-lg-block'>
+                    <div class='social'>
                         <a class='social__link' href='#'>
                             <svg class="social__facebook">
                                 <use xlink:href="icons/sprite.svg#facebook-blue"></use>
@@ -229,8 +231,8 @@
                         <li class='report__list-item'>Создание приложений для слабовидящих</li>
                     </ul>
                 </div>
-                <div class='col-md-12 col-lg-8 mt-5 d-none d-md-flex justify-content-between'>
-                    <div class='report__text'>
+                <div class='col-md-12 col-lg-8 mt-5 d-flex justify-content-between'>
+                    <div class='report__text d-none d-md-flex'>
                         65 миллионов человек страдают слепотой. Это могло быть населением целой страны. При этом вылечить людей можно было бы за 1 день (если причина нарушения зрения, например, катаракта). К сожалению, 800 миллионов людей на планете не могут позволить себе приобретение очков.
                     </div>
                     <div class='report__infographic'>
