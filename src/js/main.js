@@ -4,5 +4,5 @@ import '../sass/style.scss';
 import resize from './modules/resize';
 import hamburgerMenu from './modules/hamburger-menu';
 
-resize('.container', 'p-0');
+resize('.menu', '.container', 'p-0');
 hamburgerMenu('.js-hamburger', '.menu', '.js-menu__close');

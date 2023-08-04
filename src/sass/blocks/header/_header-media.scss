@@ -70,7 +70,12 @@
       visibility: hidden;
       opacity: 0;
       transition: all .6s;
+      &__nav {
+        min-height: 100vh;
+        display: flex;
+      }
       &__block {
+        overflow: auto;
         position: relative;
         background-color: #FFF;
         border: none;
@@ -83,14 +88,13 @@
 
       }
       &__list {
+        width: 100%;
         flex-direction: column;
         justify-content: start;
         align-items: start;
         padding: 0;
-        li:nth-last-child(-n+1) {
-          position: absolute;
-          bottom: 0;
-          left: 0;
+        &-item {
+          margin-top: auto;
         }
       }
       &__item {

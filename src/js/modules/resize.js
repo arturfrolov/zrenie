@@ -1,5 +1,6 @@
-function resize(mainSelector, addremoveSelector) {
-  const container = document.querySelector(mainSelector);
+function resize(parentSelector, targetSelector, addremoveSelector) {
+  const parent = document.querySelector(parentSelector);
+  const container = parent.querySelector(targetSelector);
   window.addEventListener('resize', () => {
     const viewportWidth = Math.max(
       document.documentElement.clientWidth,
