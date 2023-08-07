@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   margin-top: 70px;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
   @include media-breakpoint-up(lg) {
     display: block;
     margin-right: 31px;
-  }
-  @include media-breakpoint-down(lg) {
-    display: none;
   }
   @include media-breakpoint-up(xl) {
     margin-right: 41px;

@@ -132,12 +132,12 @@
       content: '';
       position: absolute;
       width: 1px;
-      height: 220px;
-      top: -44px;
+      height: calc(100% + 25px);
+      top: -19px;
       background-color: #000547;
       @include media-breakpoint-down(md) {
         top: -10px;
-        height: 252px;
+        height: calc(100% + 14px);
       }
       @include media-breakpoint-down(lg) {
         left: 0;
@@ -146,16 +146,30 @@
         left: -26px;
       }
     }
+    &-mark {
+      @include media-breakpoint-down(sm) {
+        padding-left: 12px;
+      }
+      @include media-breakpoint-up(sm) {
+        padding-left: 26px;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-left: 0;
+      }
+    }
+    &-img {
+      width: 47px;
+      height: 38px;
+    }
     &-text {
       @include media-breakpoint-down(sm) {
         font-size: 22px;
         line-height: 120%;
+        padding-left: 12px;
       }
       @include media-breakpoint-up(sm) {
         font-size: 25px;
         line-height: 140%;
-      }
-      @include media-breakpoint-down(lg) {
         padding-left: 26px;
       }
       @include media-breakpoint-up(lg) {
@@ -168,8 +182,9 @@
       margin-top: 22px;
       @include media-breakpoint-down(sm) {
         margin-top: 12px;
+        padding-left: 12px;
       }
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-up(sm) {
         padding-left: 26px;
       }
       @include media-breakpoint-up(lg) {
@@ -186,15 +201,15 @@
     &-job {
       font-size: 14px;
     }
-    &-descr {
-      @include media-breakpoint-down(sm) {
-        margin-top: 40px;
-        font-size: 15px;
-        line-height: 21px;
-      }
-      @include media-breakpoint-up(sm) {
-        margin-top: 30px;
-      }
+  }
+  &__offer-descr {
+    @include media-breakpoint-down(sm) {
+      margin-top: 40px;
+      font-size: 15px;
+      line-height: 21px;
+    }
+    @include media-breakpoint-up(sm) {
+      margin-top: 30px;
     }
   }
 }

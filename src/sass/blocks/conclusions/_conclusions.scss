@@ -41,14 +41,17 @@
       grid-template-columns: repeat(2, 139px);
       gap: 30px 5px;
       padding-top: 42px;
+      justify-content: space-evenly;
     }
     @include media-breakpoint-up(sm) {
       grid-template-columns: repeat(2, 185px);
       gap: 50px;
       padding: 42px 0 10px 0;
     }
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       grid-template-columns: repeat(3, 185px);
+    }
+    @include media-breakpoint-up(lg) {
       gap: 50px 20px;
     }
     @include media-breakpoint-up(xl) {
@@ -119,11 +122,11 @@
       }
     }
     &-logo {
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         grid-column: 1/3;
         grid-row: 4/5;
       }
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         grid-column: 2/3;
         grid-row: 3/4;
       }
