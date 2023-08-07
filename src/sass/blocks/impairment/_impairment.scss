@@ -1,21 +1,43 @@
 .impairment {
-  padding-top: 65px;
   background-color: #F8F9FA;
   color: var(--black-text, #001F2F);
   font-family: Gotham Pro, sans-serif;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  @include media-breakpoint-down(sm) {
+    font-size: 15px;
+    padding-top: 38px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 38px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 42px;
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 65px;
+  }
   &__listnum {
     line-height: 42px;
     margin-bottom: 0;
     padding-left: 18px;
-    a {
-      text-decoration: underline;
+    @include media-breakpoint-down(sm) {
+      line-height: 35px;
     }
     &-item {
       list-style-type: decimal;
+      @include media-breakpoint-down(lg) {
+        a {
+          text-decoration: none;
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        a {
+          text-decoration: underline;
+        }
+      }
       &::marker {
         color:#0833C5;
         font-family: Gotham Pro, sans-serif;
@@ -31,17 +53,6 @@
     flex-direction: column;
     &-item {
       display: flex;
-      .star {
-        &:before {
-          content: "∗";
-          font-family: Gotham Pro, sans-serif;
-          font-size: 16px;
-          color: #0833C5;
-          font-weight: 700;
-          line-height: 150%;
-          padding-right: 9px;
-        }
-      }
     }
     &-text {
       &_blue {
