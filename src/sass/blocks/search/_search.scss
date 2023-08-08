@@ -5,4 +5,48 @@
   cursor: pointer;
   font-size: 24px;
   font-weight: 400;
+  & .wrap {
+    position: relative;
+    width: 0;
+    height: 55px;
+    line-height: 55px;
+    padding-right: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+    & .fa {
+      color: #fff;
+      position: absolute;
+      right: 17px;
+      top: 15px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    &.active {
+      width: 250px;
+      padding-left: 25px;
+      transition: all 0.5s ease;
+    }
+  }
+  & .input {
+    border: 0;
+    background: transparent;
+    width: 0;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: blue;
+    font-style: italic;
+    transition: all 0.3s ease;
+    position: relative;
+    &::placeholder {
+      color: blue;
+    }
+    &.active{
+      width: 98%;
+      background: #FFF;
+      padding-left: 5px;
+      transition: all 0.5s 0.8s ease;
+    }
+  }
 }

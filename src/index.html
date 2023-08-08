@@ -61,12 +61,17 @@
                     </div>
                     <div class='col-lg-2 d-flex align-self-center'>
                         <div class='search header__search'>
-                            <a href='#'>
-                                <svg class="header__search_icon">
+                            <div class="wrap">
+                                <input type="text" class="input" placeholder="Поиск">
+<!--                                <i class="fa fa-search" aria-hidden="true"></i>-->
+                                <svg class="header__search_icon fa js-search">
                                     <use xlink:href="icons/sprite.svg#search"></use>
                                 </svg>
-                            </a>
-                            <a href='#' class='header__search_text'>Поиск</a>
+
+                            </div>
+                            <div class='search__btn'>
+                                <a href='#' class='header__search_text js-search'>Поиск</a>
+                            </div>
                         </div>
                     </div>
                     <div class='col-lg-2 d-flex align-self-center justify-content-end'>
@@ -620,23 +625,13 @@
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="exampleModalLabel">Мы свяжемся с вами как можно быстрее!</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#">
-                        <div class="mb-3">
-                            <input required placeholder="Ваше имя" name="name" type="text" class="form-control modal__input" aria-label="Имя">
-                        </div>
-                        <div class="mb-3">
-                            <input required placeholder="Ваш номер телефона" name="phone" type="tel" class="form-control modal__input">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn_dark btn_min">Перезвонить мне</button>
-                </div>
+                <form action="#">
+                    <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    <div class="modal-title" id="exampleModalLabel">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="form-control modal__input" aria-label="Имя">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="tel" class="form-control modal__input">
+                    <button type="submit" class="btn btn_dark btn_min modal__btn">Перезвонить мне</button>
+                </form>
             </div>
         </div>
     </div>

@@ -4,7 +4,9 @@ import '../sass/style.scss';
 import resize from './modules/resize';
 import hamburgerMenu from './modules/hamburger-menu';
 import fixedmenu from './modules/fixedmenu';
+import search from './modules/search';
 
 resize('.menu', '.container', 'p-0');
 hamburgerMenu('.js-hamburger', '.menu', '.js-menu__close');
 fixedmenu();
+search();
