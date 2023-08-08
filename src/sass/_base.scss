@@ -16,6 +16,13 @@ a {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
