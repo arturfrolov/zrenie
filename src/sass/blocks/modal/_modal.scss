@@ -40,6 +40,9 @@
     border-radius: 4px;
     font-weight: 500;
     transition: all .3s;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
     &:hover {
       color: #fff;
       background-color: #0833C5;
