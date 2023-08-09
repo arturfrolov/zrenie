@@ -62,16 +62,14 @@
                     <div class='col-lg-2 d-flex align-self-center'>
                         <div class='search header__search'>
                             <div class="wrap">
-                                <input type="text" class="input" placeholder="Поиск">
-<!--                                <i class="fa fa-search" aria-hidden="true"></i>-->
-                                <svg class="header__search_icon fa js-search">
-                                    <use xlink:href="icons/sprite.svg#search"></use>
-                                </svg>
-
+                                <form action='#'>
+                                    <input type="text" class="input" placeholder="Поиск">
+                                    <svg class="search__icon header__search_icon js-search">
+                                        <use xlink:href="icons/sprite.svg#search"></use>
+                                    </svg>
+                                </form>
                             </div>
-                            <div class='search__btn'>
-                                <a href='#' class='header__search_text js-search'>Поиск</a>
-                            </div>
+                            <div class='header__search_text js-search'>Поиск</div>
                         </div>
                     </div>
                     <div class='col-lg-2 d-flex align-self-center justify-content-end'>
@@ -630,7 +628,7 @@
                     <div class="modal-title" id="exampleModalLabel">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="form-control modal__input" aria-label="Имя">
                     <input required placeholder="Ваш номер телефона" name="phone" type="tel" class="form-control modal__input">
-                    <button type="submit" class="btn btn_dark btn_min modal__btn">Перезвонить мне</button>
+                    <button type="submit" class="btn btn_dark btn_min">Перезвонить мне</button>
                 </form>
             </div>
         </div>

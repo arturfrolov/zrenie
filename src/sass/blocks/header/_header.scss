@@ -262,6 +262,7 @@
   &__search {
     &_text {
       margin-left: 16px;
+      transition: all 0.3s ease;
       @include media-breakpoint-down(xl) {
         font-size: 22px;
         margin-left: 10px;
