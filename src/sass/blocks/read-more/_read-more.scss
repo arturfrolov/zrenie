@@ -151,6 +151,12 @@
         width: 290px;
         height: 56px;
       }
+      @include media-breakpoint-up(lg) {
+        width: 300px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 355px;
+      }
     }
     &-pageup {
       display: flex;
