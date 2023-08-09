@@ -9,4 +9,15 @@
   .colorgray {
     color: #BDBDBD;
   }
+  & .breadcrumb-item {
+    &:not(:first-child) {
+      &:before {
+        content: '\2192';
+        height: 5px;
+        color: #BDBDBD;
+        //position: absolute;
+
+      }
+    }
+  }
 }
