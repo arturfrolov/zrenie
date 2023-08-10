@@ -134,7 +134,7 @@
       width: 1px;
       height: calc(100% + 25px);
       top: -19px;
-      background-color: #000547;
+      background-color: var(--blue-text);
       @include media-breakpoint-down(md) {
         top: -10px;
         height: calc(100% + 14px);
