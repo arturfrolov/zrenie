@@ -1,16 +1,22 @@
 function search() {
   const searchBtnList = document.querySelectorAll('.js-search');
-  const wrap = document.querySelector('.wrap');
-  const input = document.querySelector('.input');
-  const searchText = document.querySelector('.header__search_text');
+  const wraps = document.querySelectorAll('.header .wrap');
+  const inputs = document.querySelectorAll('.header .input');
+  const searchHeaderText = document.querySelector('.header__search_text');
+  const searchMenuText = document.querySelector('.menu__search_text');
 
   searchBtnList.forEach((searchBtn) => {
     searchBtn.addEventListener('click', () => {
-      wrap.classList.toggle('active');
-      input.classList.toggle('active');
-      searchText.classList.toggle('hide');
-      input.closest('form').reset();
-      input.focus();
+      wraps.forEach((wrap) => {
+        wrap.classList.toggle('active');
+      });
+      inputs.forEach((input) => {
+        input.classList.toggle('active');
+        input.closest('form').reset();
+        input.focus();
+      });
+      searchHeaderText.classList.toggle('hide');
+      searchMenuText.classList.toggle('hide');
     });
   });
 }

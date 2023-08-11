@@ -1,10 +1,7 @@
 function resize(parentSelector, targetSelector, addremoveSelector) {
   const parent = document.querySelector(parentSelector);
   const container = parent.querySelector(targetSelector);
-  const viewportWidth = Math.max(
-    document.documentElement.clientWidth,
-    window.innerWidth || 0
-  );
+  let viewportWidth = document.documentElement.clientWidth;
 
   function checkWidth() {
     if (
@@ -20,7 +17,13 @@ function resize(parentSelector, targetSelector, addremoveSelector) {
     }
   }
 
-  window.addEventListener('resize', checkWidth);
+  window.addEventListener('resize', () => {
+    viewportWidth = Math.max(
+      document.documentElement.clientWidth,
+      window.innerWidth || 0
+    );
+    checkWidth();
+  });
 
   checkWidth();
 }

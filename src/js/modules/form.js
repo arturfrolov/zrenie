@@ -3,8 +3,8 @@ import { postData } from '../services';
 function forms(formSelector, modalSelector, modalCloseSelector) {
   // Form
 
-  const modal = document.querySelector(formSelector);
-  const form = modal.querySelector(modalSelector);
+  const modal = document.querySelector(modalSelector);
+  const form = modal.querySelector(formSelector);
   const closeBtn = modal.querySelector(modalCloseSelector);
 
   const messages = {
