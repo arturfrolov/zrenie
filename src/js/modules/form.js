@@ -1,11 +1,11 @@
 import { postData } from '../services';
 
-function forms() {
+function forms(formSelector, modalSelector, modalCloseSelector) {
   // Form
 
-  const modal = document.querySelector('.modal');
-  const form = modal.querySelector('form');
-  const closeBtn = modal.querySelector('.modal-close');
+  const modal = document.querySelector(formSelector);
+  const form = modal.querySelector(modalSelector);
+  const closeBtn = modal.querySelector(modalCloseSelector);
 
   const messages = {
     loading: './img/spinner.svg',

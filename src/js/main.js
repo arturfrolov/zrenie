@@ -9,7 +9,12 @@ import search from './modules/search';
 import forms from './modules/form';
 
 resize('.menu', '.container', 'p-0');
-hamburgerMenu('.js-hamburger', '.menu', '.js-menu__close');
+hamburgerMenu({
+  hamburgerSelector: '.js-hamburger',
+  menuSelector: '.menu',
+  closeElemSelector: '.js-menu__close',
+  overlaySelector: '.overlay',
+});
 fixedmenu();
 search();
-forms();
+forms('form', '.modal', '.modal-close');
