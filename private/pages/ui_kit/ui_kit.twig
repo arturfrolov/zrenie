@@ -1,0 +1,132 @@
+{% extends '@App/index.twig' %}
+
+{% block pageName %}page--typography{% endblock %}
+
+{% block pageContent %}
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                  aria-expanded="true" aria-controls="collapseOne">
+            Пагинация
+          </button>
+        </h2>
+      </div>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '@App/components/pagination/pagination.twig' %}
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Адаптивные таблицы
+          </button>
+        </h2>
+      </div>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {#          {% include '../../blocks/responsive_table/responsive_table.twig' with {#}
+          {#            'responsive': 'md',#}
+          {#            'settings': [#}
+          {#              {#}
+          {#                name: 'time',#}
+          {#                title: 'Дата и время помещения',#}
+          {#                type: 'dataAndTime'#}
+          {#              },#}
+          {#              {#}
+          {#                name: 'status',#}
+          {#                title: 'Статус',#}
+          {#                type: 'badge',#}
+          {#              },#}
+          {#              {#}
+          {#                name: 'specialty',#}
+          {#                title: 'Специальность',#}
+          {#                type: 'text'#}
+          {#              },#}
+          {#            ],#}
+          {#            'data': [#}
+          {#              {#}
+          {#                time: '10.05.2020 15:30',#}
+          {#                status: { text: 'Отменено', mode: 'danger' },#}
+          {#                specialty: 'Хирург',#}
+          {#              },#}
+          {#              {#}
+          {#                time: '10.05.2020 15:30',#}
+          {#                status: { text: 'Выполнено', mode: 'success' },#}
+          {#                specialty: 'Хирург',#}
+          {#              },#}
+          {#              { time: '10.05.2020 15:30', status: { text: 'Оплачено', mode: 'info' }, specialty: 'Хирург' },#}
+          {#              { time: '10.05.2020 15:30', status: { text: 'Отменено', mode: 'danger' }, specialty: 'Хирург' },#}
+          {#              { time: '10.05.2020 15:30', status: { text: 'Выполнено', mode: 'success' }, specialty: 'Хирург' },#}
+          {#            ],#}
+          {#          } %}#}
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Типография
+          </button>
+        </h2>
+      </div>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '../../components/typography/typography.twig' %}
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            Формы
+          </button>
+        </h2>
+      </div>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '../../blocks/forms/exemple.twig' %}
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            Preloader
+          </button>
+        </h2>
+      </div>
+      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '../../components/preloader/preloader.twig' with { 'class': 'd-block' } %}
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            Toast
+          </button>
+        </h2>
+      </div>
+      <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '../../components/toast/toast.twig' with {
+            'class': 'show d-block',
+            'mode': 'static',
+            'title': 'Title',
+            'text': 'Text'
+          } %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

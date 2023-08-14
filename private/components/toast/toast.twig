@@ -1,0 +1,14 @@
+<div class="toast fade hide js--server_alert {% if mode is defined %}toast--{{ mode }}{% endif %} {% if class is defined %}{{ class }}{% endif %}" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+  <div class="toast-header">
+    <div class="toast__type_message toast__type_message--alert"></div>
+    <strong class="me-auto">{% if title is defined %}{{ title }}{% endif %}</strong>
+    <small class="js--toast_timer">
+      <span class="js--toast_timer_less">меньше </span>
+      <span class="js--toast_timer_value">1</span> минуты назад
+    </small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body js--server_alert_text">
+    {% if text is defined %}{{ text }}{% endif %}
+  </div>
+</div>
