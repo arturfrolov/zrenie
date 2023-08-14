@@ -1,4 +1,110 @@
-<footer class="footer flex-shrink-0">
-  <hr>
-  <h3 class="m-4">Footer</h3>
+<footer class='footer'>
+  <div class='container'>
+    <div class='footer__links'>
+      <div class='footer__patients'>
+        <div class='footer__patients-subtitle'>Пациентам</div>
+        <ul class='footer__list'>
+          <li class='footer__list-item'>
+            <a href='#'>Каталог заболеваний</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Отзывы</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Оборудование</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Линзы</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Контакты клиник</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Цены</a>
+          </li>
+        </ul>
+      </div>
+      <div class='footer__popular'>
+        <div class='footer__popular-subtitle'>Популярное</div>
+        <ul class='footer__list'>
+          <li class='footer__list-item'>
+            <a href='#'>Услуги</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Больницы</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Врачи</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Блог</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>Партнерам</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='#'>О нас</a>
+          </li>
+        </ul>
+      </div>
+      <div class='footer__call'>
+        <div class='footer__call-contacts'>Звоните нам</div>
+        {% include "../../components/phonecontacts/phonecontacts.twig" %}
+        {% include "../../components/schedule/schedule.twig" %}
+      </div>
+      <div class='footer__follow'>
+        <div class='follow-us footer__follow-us'>
+          <div class='follow-us__text footer__follow-us-text'>Следите за нами</div>
+          <div class='follow-us__social footer__follow-us-social'>
+            <a href='#'>
+              <svg class="follow-us__social_inst">
+                <use xlink:href="icons/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href='#'>
+              <svg class="follow-us__social_youtube">
+                <use xlink:href="icons/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href='#'>
+              <svg class="follow-us__social_facebook">
+                <use xlink:href="icons/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='footer__write'>
+        <div class='footer__write-wrap'>
+          <div class='footer__write-subtitle'>Пишите нам</div>
+          <a href="mailto:zrenie.dp@gmail.com" class='footer__write-mail'>zrenie.dp@gmail.com</a>
+        </div>
+        <div class='footer__language d-none d-lg-block'>
+          <a href='#' class='footer__ua active'>UA</a>
+          <a href='#' class='footer__ru'>RU</a>
+        </div>
+      </div>
+    </div>
+    <div class='footer__info'>
+      <div class='footer__rights'>
+        <a href="#" class="footer__rights-logo">
+          <img src="icons/logo.svg" alt="logo">
+        </a>
+        <div class='footer__rights-descr'>
+          © 2020-2021 zrenie.dp.ua Все права защищены
+        </div>
+      </div>
+      <div class='footer__copyright'>
+        Копирование, тиражирование, а равноиное использование материалов, размещенных на zrenie.dp.ua возможно только с письменного разрешения Правообладателя.
+      </div>
+      <div class='footer__codex'>
+        Данный сайт носит исключительно информационный характер и ни при каких условиях информационные материалыи цены, размещенные на сайте, не являются публичной офертой, определяемой положениями Гражданского кодекса Украины.
+      </div>
+      <div class='footer__company'>
+        <a href="#" class="footer__company-logo">
+          <img src="icons/footerlogo/company.svg" alt="logocompany">
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>

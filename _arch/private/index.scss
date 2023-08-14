@@ -6,16 +6,24 @@
 @import "assets/font/style";
 
 //Components
-@import "components/typography/typography";
-@import "components/preloader/preloader";
-@import "components/toast/toast";
+@import './components/modal/modal';
+@import './components/search/search';
+@import './components/arrow/arrow';
+@import './components/button/button';
+@import './components/title/title';
+@import './components/subtitle/subtitle';
+@import './components/phonecontacts/phonecontacts';
+@import './components/schedule/schedule';
+@import './components/follow-us/follow-us';
+@import './components/menu/menu';
 
 // Forms
-@import "blocks/forms/forms";
+//@import "blocks/forms/forms";
 
 // Block
-@import "blocks/responsive_table/responsive_table";
 @import "blocks/header/header";
+@import "blocks/header/header-media";
+@import "blocks/footer/footer";
 
 // pages
-@import "pages/main/main";
+//@import "pages/main/main";
