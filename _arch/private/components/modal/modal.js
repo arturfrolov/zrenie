@@ -9,7 +9,7 @@ function forms(formSelector, modalSelector, modalCloseSelector) {
   const closeBtn = modal.querySelector(modalCloseSelector);
 
   const messages = {
-    loading: './img/spinner.svg',
+    loading: './assets/spinner.svg',
     success: 'Спасибо! Скоро мы с вами свяжемся.',
     failure: 'Что-то пошло не так...',
   };
