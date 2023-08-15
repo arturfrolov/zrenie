@@ -1,0 +1,30 @@
+<section class='read-more'>
+  <div class='container'>
+    <div class='row justify-content-center'>
+      <div class='col-12'>
+        <h2 class='read-more__title'>Еще почитать</h2>
+      </div>
+      <div class='col-12'>
+        <div class='read-more__wrapper'>
+          {% include "../../components/article-cards/article-cataract.twig" %}
+          {% include "../../components/article-cards/article-health.twig" %}
+          {% include "../../components/article-cards/article-glaucoma.twig" %}
+          {% include "../../components/article-cards/article-other.twig" with {
+            'class': 'd-flex d-lg-none'
+          } %}
+        </div>
+      </div>
+      <div class='col-12'>
+        <div class='read-more__btns'>
+          <a href='#' class='read-more__btns-articles'>
+            Больше похожих статей
+          </a>
+          <div class='read-more__btns-pageup'>
+            <a href='#up' class="read-more__btns-text">Наверх</a>
+            <span class='arrow read-more__arrow read-more__arrow_top'></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

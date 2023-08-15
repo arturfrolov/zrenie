@@ -1,8 +1,4 @@
 import 'bootstrap';
-// import '../index.html';
-// import '../sass/style.scss';
-// import '../img/spinner.svg';
-// import '../icons/sprite.svg';
 import resize from './components/resize/resize';
 import hamburgerMenu from './components/menu/hamburger-menu';
 import fixedmenu from './components/menu/fixedmenu';

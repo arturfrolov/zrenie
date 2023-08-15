@@ -6,7 +6,6 @@
 @import "assets/font/style";
 
 //Components
-@import './components/modal/modal';
 @import './components/search/search';
 @import './components/arrow/arrow';
 @import './components/button/button';
@@ -15,13 +14,19 @@
 @import './components/phonecontacts/phonecontacts';
 @import './components/schedule/schedule';
 @import './components/follow-us/follow-us';
+@import './components/star/star';
+@import './components/social/social';
+@import './components/social/social-big';
 
-// Forms
-//@import "blocks/forms/forms";
+// Modal
+@import './components/modal/modal';
 
 // Block
 @import "blocks/header/header";
+@import "blocks/pagenav/pagenav";
+@import "blocks/report/report";
+@import "blocks/conclusions/conclusions";
+@import "blocks/impairment/impairment";
+@import "blocks/access/access";
+@import "blocks/read-more/read-more";
 @import "blocks/footer/footer";
-
-// pages
-//@import "pages/main/main";

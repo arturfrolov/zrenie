@@ -8,31 +8,14 @@
 </head>
 <body>
     {% include "./blocks/header/header.twig" %}
-
-{#  {% block pagenav %}#}
-{#    {% include "./blocks/pagenav/pagenav.twig" %}#}
-{#  {% endblock %}#}
-
-{#  {% block report %}#}
-{#    {% include "./blocks/report/report.twig" %}#}
-{#  {% endblock %}#}
-
-{#  {% block conclusions %}#}
-{#    {% include "./blocks/conclusions/conclusions.twig" %}#}
-{#  {% endblock %}#}
-
-{#  {% block impairment %}#}
-{#    {% include "./blocks/impairment/impairment.twig" %}#}
-{#  {% endblock %}#}
-
-{#  {% block access %}#}
-{#    {% include "./blocks/access/access.twig" %}#}
-{#  {% endblock %}#}
-
-{#  {% block read-more %}#}
-{#    {% include "./blocks/access/read-more.twig" %}#}
-{#  {% endblock %}#}
-
+    {% block pageContent %}
+          {% include "./blocks/pagenav/pagenav.twig" %}
+          {% include "./blocks/report/report.twig" %}
+          {% include "./blocks/conclusions/conclusions.twig" %}
+          {% include "./blocks/impairment/impairment.twig" %}
+          {% include "./blocks/access/access.twig" %}
+          {% include "./blocks/read-more/read-more.twig" %}
+    {% endblock %}
   {% include "./blocks/footer/footer.twig" %}
   {% include "./components/modal/modal.twig" %}
 
