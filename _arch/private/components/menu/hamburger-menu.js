@@ -9,6 +9,12 @@ function hamburgerMenu({
   const close = document.querySelector(closeElemSelector);
   const overlay = document.querySelector(overlaySelector);
 
+  function closeMenu() {
+    const body = document.querySelector('body');
+    body.removeAttribute('style');
+    menu.classList.remove('active');
+  }
+
   hamburger.addEventListener('click', () => {
     const body = document.querySelector('body');
     body.setAttribute('style', 'height: 100vh; overflow: hidden');
@@ -17,9 +23,9 @@ function hamburgerMenu({
 
   menu.addEventListener('click', (event) => {
     if (event.target === close || event.target === overlay) {
-      const body = document.querySelector('body');
-      body.removeAttribute('style');
-      menu.classList.remove('active');
+      closeMenu();
+    } else if (event.target.className === 'menu__item' || event.target.parentElement.className === 'menu__item') {
+      closeMenu();
     }
   });
 }
