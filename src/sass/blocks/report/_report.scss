@@ -127,7 +127,7 @@
     @include media-breakpoint-down(lg) {
       width: 240px;
     }
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-between(lg, xl) {
       width: 217px;
     }
   }
