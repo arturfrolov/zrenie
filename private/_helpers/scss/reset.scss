@@ -2,44 +2,47 @@
 @import "variables";
 
 //Reset and base style
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
-  font-family: 'Fira Sans', serif !important;
-}
 button {
   cursor: pointer;
-}
-textarea,
-select,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-body {
-  min-width: $body-min-width;
-  font-size: $font-size-body;
-  font-family: $font-family-primary;
-  font-weight: 300;
-  font-style: normal;
-  &.body--overflow {
-    overflow: hidden;
-    height: 100%;
-  }
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
 }
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
+
+.mt14 {
+  margin-top: 14px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 750px,
+  lg: 960px,
+  xl: 1115px,
+  xxl: 1320px
+);
+
+$link-decoration: none;
