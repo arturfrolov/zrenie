@@ -6,11 +6,34 @@
       </div>
       <div class='col-12'>
         <div class='read-more__wrapper'>
-          {% include "../../components/article-cards/article-cataract.twig" %}
-          {% include "../../components/article-cards/article-health.twig" %}
-          {% include "../../components/article-cards/article-glaucoma.twig" %}
-          {% include "../../components/article-cards/article-other.twig" with {
-            'class': 'd-flex d-lg-none'
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/cataract.jpg',
+            'alt': 'cataract',
+            'label': 'Статьи',
+            'subheader': '5 способов профилактики катаракты',
+            'date': '23 февраля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/report.jpg',
+            'alt': 'report',
+            'label': 'Советы',
+            'subheader': 'Всемирный доклад о проблемах здоровья',
+            'date': '8 июля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'src': './assets/glaucoma.jpg',
+            'alt': 'glaucoma',
+            'label': 'Блог',
+            'subheader': 'Лечение глаукомы народными средствами',
+            'date': '8 июля'
+          } %}
+          {% include "../../components/article-cards/article-card.twig" with {
+            'class': 'd-flex d-lg-none',
+            'src': './assets/glaucoma.jpg',
+            'alt': 'glaucoma',
+            'label': 'Блог',
+            'subheader': 'Лечение глаукомы народными средствами',
+            'date': '8 июля'
           } %}
         </div>
       </div>
