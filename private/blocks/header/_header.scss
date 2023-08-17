@@ -327,6 +327,7 @@
       transition: all .3s;
       &:hover {
         scale: 110%;
+        will-change: transform;
       }
     }
     .header__btn {

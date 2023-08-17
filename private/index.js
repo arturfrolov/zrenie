@@ -4,6 +4,7 @@ import hamburgerMenu from './components/menu/hamburger-menu';
 import fixedmenu from './components/menu/fixedmenu';
 import search from './components/search/search';
 import forms from './components/modal/modal';
+import pageUp from './components/pageup/pageup';
 
 resize('.menu', '.container', 'p-0');
 hamburgerMenu({
@@ -15,3 +16,4 @@ hamburgerMenu({
 fixedmenu();
 search();
 forms('form', '.modal', '.modal-close');
+pageUp();
