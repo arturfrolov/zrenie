@@ -15,8 +15,8 @@ function search() {
         input.closest('form').reset();
         input.focus();
       });
-      searchHeaderText.classList.toggle('hide');
-      searchMenuText.classList.toggle('hide');
+      searchHeaderText.classList.toggle('d-none');
+      searchMenuText.classList.toggle('d-none');
     });
   });
 }

@@ -5,10 +5,13 @@
 button {
   cursor: pointer;
 }
+
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
 
-$link-decoration: none;
+a {
+  text-decoration: none;
+}

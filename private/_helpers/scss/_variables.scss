@@ -6,32 +6,7 @@
   --btn-color: #E0FA00;
 }
 
-
-.mt14 {
-  margin-top: 14px;
-}
-.mt40 {
-  margin-top: 40px;
-}
-a {
-  text-decoration: none;
-}
-
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
+$link-decoration: none;
 
 $container-max-widths: (
   sm: 540px,

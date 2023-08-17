@@ -7,9 +7,9 @@ const flatten = require("gulp-flatten");
 
 
 module.exports = function(config) {
-  const filterForTiny = filter(['**/*.{png,jpg,jpeg}'],
+  const filterForTiny = filter(['*.{png,jpg,jpeg}'],
     { restore: true });
-  const filterForImageMin = filter(['**/*.{svg,gif}'],
+  const filterForImageMin = filter(['*.{svg,gif}'],
     { restore: true });
 
   return gulp.src(config.private.images)

@@ -17,7 +17,7 @@ function forms(formSelector, modalSelector, modalCloseSelector) {
   function showThanksModal(message) {
     const prevModalDialog = document.querySelector('.modal-dialog');
 
-    prevModalDialog.classList.add('hide');
+    prevModalDialog.classList.add('d-none');
     prevModalDialog.classList.remove('modal-dialog-centered');
 
     const thanksModal = document.createElement('div');
@@ -35,7 +35,7 @@ function forms(formSelector, modalSelector, modalCloseSelector) {
       document.querySelector('.fade').style.transition = 'all 0s';
       closeBtn.click();
       thanksModal.remove();
-      prevModalDialog.classList.remove('hide');
+      prevModalDialog.classList.remove('d-none');
       prevModalDialog.classList.add('modal-dialog-centered');
     }, 5000);
   }

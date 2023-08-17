@@ -154,6 +154,12 @@
     display: flex;
     align-items: center;
     width: 100%;
+    &.mt14 {
+      margin-top: 14px;
+    }
+    &.mt40 {
+      margin-top: 40px;
+    }
     &-descr {
       display: flex;
       flex-direction: column;
