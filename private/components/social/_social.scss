@@ -12,9 +12,6 @@
   @include media-breakpoint-up(xl) {
     margin-right: 41px;
   }
-  @include media-breakpoint-up(xxl) {
-    margin-right: 59px;
-  }
   &__link {
     display: flex;
     justify-content: center;
