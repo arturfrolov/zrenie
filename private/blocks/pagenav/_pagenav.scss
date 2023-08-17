@@ -6,6 +6,9 @@
   line-height: 100%;
   overflow: hidden;
   background-color: #F8F9FA;
+  @include media-breakpoint-down(lg) {
+    margin-top: 72px;
+  }
   .colorgray {
     color: #BDBDBD;
   }
