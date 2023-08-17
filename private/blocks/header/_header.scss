@@ -324,10 +324,12 @@
   }
   @media (hover: hover) {
     .menu__item {
-      transition: all .3s;
-      &:hover {
-        scale: 110%;
-        will-change: transform;
+      will-change: transform;
+      a {
+        transition: all .3s;
+        &:hover {
+          color: var(--green-text);
+        }
       }
     }
     .header__btn {
