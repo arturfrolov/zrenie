@@ -160,10 +160,6 @@
       grid-template-columns: repeat(2, auto);
       column-gap: 10px;
     }
-    @include media-breakpoint-up(xxl) {
-      grid-template-columns: repeat(2, 363px);
-      column-gap: 49px;
-    }
     &-item {
       display: flex;
       align-content: center;
@@ -232,9 +228,6 @@
       }
       @include media-breakpoint-up(sm) {
         font-size: 13px;
-      }
-      @include media-breakpoint-up(lg) {
-        font-size: 14px;
       }
     }
     &-logo {
