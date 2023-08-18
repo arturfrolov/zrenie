@@ -1,8 +1,9 @@
 <section class='report'>
+  {% include "../../components/pagenav/pagenav.twig" %}
   <div class='container'>
     <div class='row justify-content-center'>
       <div class='col-12 col-lg-10'>
-        <h1 class='title report__title'>Всемирный доклад о проблемах здоровья</h1>
+        <h1 class='report__title'>Всемирный доклад о проблемах здоровья</h1>
       </div>
       <div class='col-12 col-lg-10 mt-3 d-flex'>
         <div class='report__chapter'>Новости</div>
@@ -24,25 +25,27 @@
         </div>
       </div>
       <div class='col-12 col-lg-10 d-flex'>
-        {% include "../../components/social/social.twig" %}
+        {% include "../../components/social/social.twig" with {
+          'class': 'd-none d-lg-flex'
+        } %}
         <div class='report__factor'>
-          <h4 class='subtitle report__subtitle'>Основные факторы роста числа людей с недостаточным зрением:
+          <h4 class='report__subtitle'>Основные факторы роста числа людей с недостаточным зрением:
           </h4>
           <div class='report__list'>
             <div class='report__list-item'>
-              <div class='star'></div>
+              {% include "../../components/star/star.twig" %}
               <div class='report__list-text'>
                 Старение населения
               </div>
             </div>
             <div class='report__list-item'>
-              <div class='star'></div>
+              {% include "../../components/star/star.twig" %}
               <div class='report__list-text'>
                 Изменение образа жизни
               </div>
             </div>
             <div class='report__list-item'>
-              <div class='star'></div>
+              {% include "../../components/star/star.twig" %}
               <div class='report__list-text'>
                 Ограниченный доступ к офтальмологической помощи
               </div>
@@ -51,29 +54,29 @@
         </div>
       </div>
       <div class='col-12 col-lg-8 mt-3 mt-md-4'>
-        <h4 class='subtitle report__subtitle'>Вопрос можно частично решить при помощи:
+        <h4 class='report__subtitle'>Вопрос можно частично решить при помощи:
         </h4>
         <div class='report__list'>
           <div class='report__list-item'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='report__list-text'>
               Лупы
             </div>
           </div>
           <div class='report__list-item'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='report__list-text'>
               Обучением чтению шрифтом Брайля
             </div>
           </div>
           <div class='report__list-item'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='report__list-text'>
               Ориентации на местности и передвижению с использованием трости
             </div>
           </div>
           <div class='report__list-item'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='report__list-text'>
               Создание приложений для слабовидящих
             </div>

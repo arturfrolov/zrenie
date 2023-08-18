@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-top: 70px;
   @include media-breakpoint-down(lg) {
-    display: none;
+    flex-direction: row;
   }
   @include media-breakpoint-up(lg) {
     display: block;
@@ -12,8 +12,23 @@
   @include media-breakpoint-up(xl) {
     margin-right: 41px;
   }
-  svg {
-    fill: #0833C5;
+  &__text {
+    color: var(--blue-text);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-right: 11px;
+    align-items: center;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-down(lg) {
+      flex-direction: row;
+    }
+    svg {
+      fill: #0833C5;
+    }
   }
   &__link {
     display: flex;
@@ -22,9 +37,21 @@
     width: 50px;
     height: 50px;
     border: 1px solid var(--blue-text);
+    @include media-breakpoint-down(sm) {
+      width: 45px;
+      height: 45px;
+    }
     &:nth-child(even) {
       border-top: none;
       border-bottom: none;
+      @include media-breakpoint-down(lg) {
+        border: 1px solid var(--blue-text);
+        border-left: none;
+        border-right: none;
+      }
+    }
+    &:last-child {
+      border: 1px solid var(--blue-text);
     }
   }
   &__facebook {
@@ -34,6 +61,18 @@
   &__pinterest {
     width: 24px;
     height: 24px;
+  }
+  &__twitter {
+    width: 20px;
+    height: 20px;
+  }
+  &__linkedin {
+    width: 22px;
+    height: 23px;
+  }
+  &__telegram {
+    width: 23px;
+    height: 19px;
   }
   &__plus {
     position: relative;

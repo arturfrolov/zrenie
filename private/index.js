@@ -1,7 +1,7 @@
 import 'bootstrap';
 import resize from './components/resize/resize';
-import hamburgerMenu from './components/menu/hamburger-menu';
-import fixedmenu from './components/menu/fixedmenu';
+import hamburgerMenu from './blocks/header/hamburger-menu';
+import fixedmenu from './blocks/header/fixedmenu';
 import search from './components/search/search';
 import forms from './components/modal/modal';
 import pageUp from './components/pageup/pageup';

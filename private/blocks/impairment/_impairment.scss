@@ -19,6 +19,15 @@
   @include media-breakpoint-up(xl) {
     padding-top: 65px;
   }
+  &__subtitle {
+    color: #001F2F;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    @include media-breakpoint-down(sm) {
+      font-size: 15px;
+    }
+  }
   &__listnum {
     line-height: 42px;
     margin-bottom: 0;

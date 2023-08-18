@@ -40,6 +40,8 @@
     }
   }
   &__callback {
+    stroke: #E0FA00;
+    stroke-width: 1.5;
     @include media-breakpoint-down(lg) {
       width: 28px;
       height: 28px;

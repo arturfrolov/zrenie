@@ -1,13 +1,13 @@
-<div class='read-more__item {{ class }}'>
-  <div class='read-more__item-img'>
+<div class='article-card__item {{ class }}'>
+  <div class='article-card__item-img'>
     <img src='{% if src is defined %}{{ src }}{% endif %}' alt='{% if alt is defined %}{{ alt }}{% endif %}'>
-    <div class='read-more__item-img-label'>{% if label is defined %}{{ label }}{% endif %}</div>
+    <div class='article-card__item-img-label'>{% if label is defined %}{{ label }}{% endif %}</div>
   </div>
-  <div class='read-more__item-wrap'>
-    <div class='read-more__item-subheader'>
+  <div class='article-card__item-wrap'>
+    <div class='article-card__item-subheader'>
       {% if subheader is defined %}{{ subheader }}{% endif %}
     </div>
-    <span class='arrow read-more__arrow'></span>
+    <span class='arrow article-card__arrow'></span>
   </div>
-  <div class='read-more__item-date'>{% if date is defined %}{{ date }}{% endif %}</div>
+  <div class='article-card__item-date'>{% if date is defined %}{{ date }}{% endif %}</div>
 </div>

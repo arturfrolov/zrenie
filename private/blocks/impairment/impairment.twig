@@ -2,12 +2,13 @@
   <div class='container'>
     <div class='row justify-content-center'>
       <div class='col-lg-8'>
-        <h2 class='title impairment__title'>
-          Почему число случаев нарушений зрения растет?
-        </h2>
+        {% include "../../components/title/title.twig" with {
+          'class': 'impairment__title',
+          'text': 'Почему число случаев нарушений зрения растет?'
+        } %}
       </div>
       <div class='col-lg-8 mt-3 mt-md-4 mt-lg-5'>
-        <h4 class='subtitle impairment__subtitle'>
+        <h4 class='impairment__subtitle'>
           Какие заболевания непосредственно приводят к слепоте:
         </h4>
         <ul class='impairment__listnum mt-3'>
@@ -28,26 +29,26 @@
         </div>
       </div>
       <div class='col-lg-8 mt-4 mt-lg-5'>
-        <h4 class='subtitle impairment__subtitle '>
+        <h4 class='impairment__subtitle '>
           Основные факторы самых распространенных глазных заболеваний:
         </h4>
         <div class='impairment__liststar mt-3'>
           <div class='impairment__liststar-item'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='impairment__liststar-text'>
               <span class='impairment__liststar-text_blue'>Миопия (близорукость)</span>
               развивается в связи с большими зрительными нагрузками. Проводя много времени в помещении и взаимодействуя с близко расположенными предметами, усугубляется течение заболевания. Для снижения риска болезни рекомендуется больше времени проводить на улице.
             </div>
           </div>
           <div class='impairment__liststar-item mt-3'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='impairment__liststar-text'>
               <span class='impairment__liststar-text_blue'>Диабетическая ретинопатия</span>
               является следствием сахарного диабета, который появляется почти у всех больных. Регулярные проверки, получение качественной медицинской помощи могут защитить людей от заболевания сетчатки.
             </div>
           </div>
           <div class='impairment__liststar-item mt-3'>
-            <div class='star'></div>
+            {% include "../../components/star/star.twig" %}
             <div class='impairment__liststar-text'>
               Некачественная или несвоевременная диагностика не может обеспечить получение пациентом подходящего лечения. Зачастую, это полное отсутствие профилактики, которое приводит к выявлению болезни, находящейся уже в запущенной стадии.
             </div>
