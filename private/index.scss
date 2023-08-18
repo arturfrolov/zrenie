@@ -5,9 +5,8 @@
 @import "assets/font/style";
 
 //Components
-@import './components/search/search';
+//@import './components/search/search';
 @import './components/arrow/arrow';
-@import './components/button/button';
 @import './components/title/title';
 @import './components/phonecontacts/phonecontacts';
 @import './components/schedule/schedule';
@@ -20,7 +19,6 @@
 
 // Block
 @import "blocks/header/header";
-
 @import './blocks/report/report';
 @import './blocks/conclusions/conclusions';
 @import './blocks/impairment/impairment';

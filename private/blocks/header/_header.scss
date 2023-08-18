@@ -10,6 +10,38 @@
   @include media-breakpoint-down(lg) {
     min-height: 72px;
   }
+  & .button {
+    height: 52px;
+    border-radius: 0;
+    border: none;
+    background-color: var(--btn-color);
+    color: var(--blue-text);
+    font-family: Gotham Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  & .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+    &__icon {
+      width: 37px;
+      height: 35px;
+      stroke: #E0FA00;
+      stroke-width: 2;
+      @include media-breakpoint-down(xl) {
+        width: 31px;
+      }
+      @include media-breakpoint-down(lg) {
+        stroke: var(--green-text);
+      }
+    }
+  }
   &__subheader {
     padding: 19px 0 21px 0;
     @include media-breakpoint-down(lg) {
