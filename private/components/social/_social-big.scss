@@ -12,6 +12,9 @@
   &__block {
     display: flex;
     flex-direction: row;
+    svg {
+      fill: #0833C5;
+    }
   }
   &__link {
     display: flex;

@@ -6,9 +6,7 @@
   font-weight: 400;
   line-height: 150%;
   background-color: #F8F9FA;
-  @include media-breakpoint-down(sm) {
-    padding-top: 42px;
-  }
+  padding-top: 42px;
   @include media-breakpoint-up(sm) {
     padding-top: 52px;
   }

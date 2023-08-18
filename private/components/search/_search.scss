@@ -8,8 +8,13 @@
   &__icon {
     width: 37px;
     height: 35px;
+    stroke: #E0FA00;
+    stroke-width: 2;
     @include media-breakpoint-down(xl) {
       width: 31px;
+    }
+    @include media-breakpoint-down(lg) {
+      stroke: var(--green-text);
     }
   }
 }

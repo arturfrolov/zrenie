@@ -10,11 +10,8 @@
   @include media-breakpoint-down(md) {
     padding: 60px 0;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-between(md, lg) {
     padding: 83px 0 44px 0;
-  }
-  @include media-breakpoint-up(lg) {
-    padding: 103px 0 26px 0;
   }
   &__links {
     display: grid;
