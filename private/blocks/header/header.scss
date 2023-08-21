@@ -382,6 +382,7 @@
     .header__btn {
       transition: all .3s;
       &:hover {
+        background-color: #ffca2c;
         box-shadow: 0 0.5em 0.5em -0.4em;
         transform: translateY(-0.25em);
       }
