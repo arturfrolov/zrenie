@@ -44,7 +44,9 @@
           </a>
           <div class='read-more__btns-pageup'>
             <a href='#up' class="read-more__btns-text">Наверх</a>
-            <span class='arrow article-card__arrow article-card__arrow_top'></span>
+            {% include "../../components/arrow/arrow.twig" with {
+              'class': 'article-card__arrow article-card__arrow_top'
+            } %}
           </div>
         </div>
       </div>

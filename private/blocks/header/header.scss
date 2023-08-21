@@ -10,6 +10,12 @@
   @include media-breakpoint-down(lg) {
     min-height: 72px;
   }
+  &.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
   & .button {
     height: 52px;
     border-radius: 0;
@@ -87,6 +93,13 @@
     color: #F8F9FA;
     font-size: 18px;
     font-weight: 400;
+    &.fixed-menu {
+      position: fixed;
+      top: -1px;
+      width: 100%;
+      background-color: #0833C5;
+      z-index: 100;
+    }
     &__list {
       display: flex;
       justify-content: space-between;

@@ -7,7 +7,9 @@
     <div class='article-card__item-subheader'>
       {% if subheader is defined %}{{ subheader }}{% endif %}
     </div>
-    <span class='arrow article-card__arrow'></span>
+    {% include "../../components/arrow/arrow.twig" with {
+      'class': 'article-card__arrow'
+    } %}
   </div>
   <div class='article-card__item-date'>{% if date is defined %}{{ date }}{% endif %}</div>
 </div>

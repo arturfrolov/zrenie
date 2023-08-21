@@ -2,29 +2,26 @@ function header() {
   function fixedmenu() {
     const menu = document.querySelector('.menu');
     const header = document.querySelector('.header');
+    const container = menu.querySelector('.container');
     let viewportWidth = document.documentElement.clientWidth;
 
     function checkWidth() {
       if (viewportWidth < 992) {
-        header.setAttribute(
-          'style',
-          'position: fixed; top: 0; width: 100%; z-index: 100;',
-        );
-        menu.removeAttribute('style');
+        header.classList.add('fixed-header');
+        menu.classList.remove('fixed-menu');
+        container.classList.add('p-0');
       } else {
-        header.removeAttribute('style');
+        header.classList.remove('fixed-header');
+        container.classList.remove('p-0');
       }
     }
 
     function checkHeight() {
       if (viewportWidth >= 992 && window.scrollY >= 101) {
-        menu.setAttribute(
-          'style',
-          'position: fixed; top: -1px; width: 100%; background-color: #0833C5; z-index: 100;',
-        );
-        header.removeAttribute('style');
+        menu.classList.add('fixed-menu');
+        header.classList.remove('fixed-header');
       } else {
-        menu.removeAttribute('style');
+        menu.classList.remove('fixed-menu');
       }
     }
 
