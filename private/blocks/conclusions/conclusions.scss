@@ -25,31 +25,22 @@
     }
   }
   &__problems {
-    display: grid;
-    grid-template-columns: repeat(3, 185px);
-    grid-template-rows: minmax(115px, auto) minmax(115px, auto);
-    grid-auto-rows: minmax(auto, auto);
-    gap: 50px 43px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #FFF;
     justify-content: center;
     align-items: center;
-    justify-items: center;
     padding: 62px 0 16px 0;
     border-top: solid 3px #0833C5;
     @include media-breakpoint-down(sm) {
-      grid-template-columns: repeat(2, 139px);
-      gap: 30px 5px;
+      row-gap: 30px;
       padding-top: 42px;
       justify-content: space-evenly;
     }
     @include media-breakpoint-up(sm) {
-      grid-template-columns: repeat(2, 185px);
       gap: 50px;
       padding: 42px 0 10px 0;
-    }
-    @include media-breakpoint-up(md) {
-      grid-template-columns: repeat(3, 185px);
     }
     @include media-breakpoint-up(lg) {
       gap: 50px 20px;
@@ -59,6 +50,14 @@
     }
     @include media-breakpoint-up(xxl) {
       gap: 50px 43px;
+    }
+    &-block {
+      display: flex;
+      flex-direction: column;
+      width: 185px;
+      @include media-breakpoint-down(sm) {
+        flex-basis: calc((100% / 2) - 1rem);
+      }
     }
     &-item {
       img {
@@ -121,49 +120,41 @@
         height: 60px;
       }
     }
-    &-logo {
-      @include media-breakpoint-down(md) {
-        grid-column: 1/3;
-        grid-row: 4/5;
-      }
-      @include media-breakpoint-up(md) {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-    }
   }
   &__help {
-    display: grid;
-    grid-template-columns: repeat(2, 363px);
-    grid-template-rows: minmax(85px, auto);
-    grid-auto-rows: minmax(auto, auto);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
     align-items: center;
     padding: 50px 0 12px 0;
     border-top: solid 3px #0833C5;
-    column-gap: 49px;
+    column-gap: 1rem;
     row-gap: 26px;
     width: 100%;
     background-color: #FFF;
     @include media-breakpoint-down(sm) {
-      grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
       row-gap: 47px;
     }
     @include media-breakpoint-up(sm) {
-      grid-template-columns: repeat(auto-fit, minmax(363px, 370px));
-      grid-template-rows: minmax(auto, auto);
       column-gap: 10px;
     }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
     @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(2, auto);
       column-gap: 10px;
     }
     &-item {
       display: flex;
       align-content: center;
       align-items: center;
+      flex-basis: calc((100% / 2) - 1rem);
+      @include media-breakpoint-down(sm) {
+        width: 276px;
+      }
+      @include media-breakpoint-between(sm, md) {
+        width: 360px;
+      }
       @include media-breakpoint-down(lg) {
         flex-direction: row;
       }
@@ -181,16 +172,16 @@
       width: 67px;
       height: 49px;
       @include media-breakpoint-down(sm) {
-        width: 52px;
-        height: 34px;
+        width: 60px;
+        height: 43px;
       }
     }
     &-africappl {
       width: 76px;
       height: 85px;
       @include media-breakpoint-down(sm) {
-        width: 61px;
-        height: 70px;
+        width: 68px;
+        height: 77px;
       }
     }
     &-descr {
@@ -217,7 +208,7 @@
         font-size: 27px;
       }
       @include media-breakpoint-up(lg) {
-        font-size: 29px;
+        font-size: 28px;
       }
     }
     &-text {
@@ -225,19 +216,10 @@
       line-height: 23px;
       @include media-breakpoint-down(sm) {
         font-size: 11px;
+        line-height: 19px;
       }
       @include media-breakpoint-up(sm) {
         font-size: 13px;
-      }
-    }
-    &-logo {
-      @include media-breakpoint-down(md) {
-        grid-column: initial;
-        grid-row: initial;
-      }
-      @include media-breakpoint-up(md) {
-        grid-column: 1/3;
-        grid-row: 2/3;
       }
     }
   }

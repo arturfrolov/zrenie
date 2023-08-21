@@ -138,21 +138,14 @@
     }
   }
   &__infographic {
-    display: grid;
-    grid-template-columns: minmax(290px, auto);
-    grid-template-rows: minmax(132px, auto) minmax(50px, auto) minmax(56px, auto);
-    grid-auto-rows: minmax(auto, auto);
-    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
     margin-top: 4px;
     padding: 27px 0 16px 0;
     border-top: solid 3px #0833C5;
     background-color: #FFF;
     @include media-breakpoint-down(sm) {
-      grid-template-rows: minmax(110px, auto) minmax(50px, auto) minmax(56px, auto);
-      row-gap: 10px;
       width: 100%;
     }
     @include media-breakpoint-up(sm) {
@@ -168,7 +161,10 @@
   &__item {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 333px;
+    @include media-breakpoint-down(sm) {
+      width: 296px;
+    }
     &.mt14 {
       margin-top: 14px;
     }
