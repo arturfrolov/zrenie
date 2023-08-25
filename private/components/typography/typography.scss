@@ -117,18 +117,18 @@
       overflow: hidden;
       position: relative;
       margin: 5px 0;
-      padding-left: 30px;
+      padding-left: 25px;
       &:before {
-        content: "";
+        content: "∗";
         display: block;
         margin: 0;
         position: absolute;
-        top: 8px;
-        left: 6px;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: $typography_ul_li__bg;
+        top: 0;
+        left: 0;
+        min-width: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $typography_ol_li__color;
       }
       ul li {
         &:before {
@@ -144,32 +144,28 @@
     list-style: none inside;
     counter-reset: item;
     padding: 0;
+    margin-bottom: 0;
     li {
       overflow: hidden;
       margin: 5px 0;
-      padding-left: 35px;
+      padding-left: 20px;
       &:before {
-        content: counters(item, ".") " ";
+        content: counters(item, ".") ". ";
         counter-increment: item;
         position: relative;
         display: inline-block;
-        min-width: 25px;
-        margin-left: -35px;
-        margin-right: 10px;
-        padding: 2px 3px 1px;
-        font-size: 80%;
-        font-weight: 700;
-        text-align: center;
+        min-width: 15px;
+        margin-left: -20px;
+        font-size: 18px;
+        font-weight: 500;
         color: $typography_ol_li__color;
-        border-radius: 100px;
-        border: 2px solid $typography_ol_li__border;
         box-sizing: border-box;
       }
     }
   }
   img {
-    max-width: 100%;
-    max-height: 100%;
+    //max-width: 100%;
+    //max-height: 100%;
   }
   u,
   ins {

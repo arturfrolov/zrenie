@@ -4,11 +4,11 @@ $theme-colors: (
   "secondary": #ffc107,
 ) !default;
 // @Global text style
-$typography_font__family: "Avenir", sans-serif !default;
+$typography_font__family: "Gotham Pro", sans-serif !default;
 $typography_font__size: 16px !default;
 $typography_line_height: 1.2 !default;
-$typography_text_color: #424242 !default;
-$typography_title_color: #000 !default;
+$typography_text_color: #001F2F !default;
+$typography_title_color: #000547 !default;
 
 //Headers
 $typography_headers__family: $typography_font__family;
@@ -22,8 +22,8 @@ $typography_headers__sizes: (
     xl: 32px,
   ),
   h2: (
-    xs: 21px,
-    md: 27px,
+    xs: 24px,
+    md: 26px,
     xl: 28px,
   ),
   h3: (
@@ -32,9 +32,9 @@ $typography_headers__sizes: (
     xl: 24px,
   ),
   h4: (
-    xs: 17px,
-    md: 20px,
-    xl: $typography_font__size * 1.125,
+    xs: 15px,
+    md: 16px,
+    xl: $typography_font__size,
   ),
   h5: (
     xs: 13px,
@@ -50,9 +50,9 @@ $typography_headers__sizes: (
 // font weight
 $typography_headers__weights: (
   h1: 700,
-  h2: 600,
+  h2: 500,
   h3: 500,
-  h4: 400,
+  h4: 500,
   h5: 400,
   h6: 400,
 ) !default;

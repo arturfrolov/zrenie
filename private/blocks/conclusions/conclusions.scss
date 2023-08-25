@@ -1,27 +1,10 @@
 .conclusions {
   padding-top: 65px;
   background-color: #F8F9FA;
-  color: #001F2F;
-  font-family: Gotham Pro, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  &__title {
-    @include media-breakpoint-up(sm) {
-      line-height: normal;
-    }
-    @include media-breakpoint-up(lg) {
-      line-height: 35px;
-    }
-  }
   &__list-item {
-    display: flex;
-    &-num {
-      color: #0833C5;
-      font-size: 18px;
-      font-weight: 500;
-      padding-right: 5px;
+    &:nth-child(2)::before,
+    &:nth-child(6)::before {
+      display: none;
     }
   }
   &__problems {
@@ -140,6 +123,7 @@
     }
     @include media-breakpoint-down(md) {
       flex-direction: column;
+      flex-wrap: nowrap;
     }
     @include media-breakpoint-up(lg) {
       column-gap: 10px;

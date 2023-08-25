@@ -1,0 +1,20 @@
+{% extends '@App/index.twig' %}
+
+{% block pageName %}page--typography{% endblock %}
+
+{% block pageContent %}
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <h2 class="mb-0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Типография
+          </button>
+        </h2>
+      </div>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {% include '../../components/typography/typography.twig' %}
+        </div>
+      </div>
+    </div>
+{% endblock %}

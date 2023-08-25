@@ -1,0 +1,13 @@
+{% extends '@App/index.twig' %}
+
+{% block pageName %}page--main{% endblock %}
+
+{% block pageContent %}
+  {% include "../../blocks/report/report.twig" %}
+  <div class="typography">
+    {% include "../../blocks/conclusions/conclusions.twig" %}
+    {% include "../../blocks/impairment/impairment.twig" %}
+    {% include "../../blocks/access/access.twig" %}
+    {% include "../../blocks/read-more/read-more.twig" %}
+  </div>
+{% endblock %}
