@@ -1,7 +1,5 @@
 .report {
   font-family: Acme, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   background-color: #F8F9FA;
   padding-top: 21px;
   &__title {
@@ -15,24 +13,9 @@
       line-height: normal;
       font-size: 30px;
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-between(md, lg) {
       font-size: 41px;
       line-height: 45px;
-    }
-    @include media-breakpoint-up(lg) {
-      font-size: 45px;
-      line-height: 54px;
-    }
-  }
-  &__subtitle {
-    color: #001F2F;
-    font-family: Gotham Pro, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-    margin: 0;
-    @include media-breakpoint-down(sm) {
-      font-size: 15px;
     }
   }
   &__chapter {
@@ -96,30 +79,14 @@
     @include media-breakpoint-down(sm) {
       margin-top: 35px;
     }
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-between(sm, lg) {
       margin-top: 48px;
-    }
-    @include media-breakpoint-up(lg) {
-      margin-top: 70px;
     }
   }
   &__list {
-    list-style-type: none;
     margin-bottom: 0;
     padding-left: 0;
     &-item {
-      color: #001F2F;
-      font-size: 16px;
-      display: flex;
-      @include media-breakpoint-down(sm) {
-        line-height: 35px;
-      }
-      @include media-breakpoint-up(sm) {
-        line-height: 35px;
-      }
-      @include media-breakpoint-up(lg) {
-        line-height: 42px;
-      }
       &:nth-child(1) {
         margin-top: 8px;
       }
@@ -127,8 +94,6 @@
   }
   &__text {
     width: 260px;
-    color: #001F2F;
-    font-size: 16px;
     line-height: 200%;
     @include media-breakpoint-down(lg) {
       width: 240px;
