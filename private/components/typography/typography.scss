@@ -30,6 +30,8 @@
   .#{$header_type} {
     color: $typography_headers__color;
     font-family: $typography_headers__family;
+    margin-top: $typography_headers__margin-top;
+    margin-bottom: $typography_headers__margin-bottom;
     //font-size: #{$typography_headers__font-size};
     @each $breakpoint, $font-size in $typography_headers__font-size {
       @if $breakpoint == xs {
@@ -113,10 +115,11 @@
     list-style: none !important;
     list-style-position: inside;
     padding: 0;
+    margin-bottom: 0;
     li {
       overflow: hidden;
       position: relative;
-      margin: 5px 0;
+      margin: 0;
       padding-left: 25px;
       &:before {
         content: "∗";

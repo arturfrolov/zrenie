@@ -13,8 +13,8 @@ $typography_title_color: #000547 !default;
 //Headers
 $typography_headers__family: $typography_font__family;
 $typography_headers__color: $typography_title_color;
-$typography_headers__margin-top: #{$typography_line_height * 2}rem;
-$typography_headers__margin-bottom: #{$typography_line_height + 0.2}rem;
+$typography_headers__margin-top: #{$typography_line_height * 2}rem !default;
+$typography_headers__margin-bottom: #{$typography_line_height + 0.2}rem !default;
 $typography_headers__sizes: (
   h1: (
     xs: 25px,
@@ -32,7 +32,7 @@ $typography_headers__sizes: (
     xl: 24px,
   ),
   h4: (
-    xs: 15px,
+    xs: 16px,
     md: 16px,
     xl: $typography_font__size,
   ),
