@@ -1,5 +1,5 @@
 .impairment {
-  background-color: #F8F9FA;
+  background-color: map-get($theme-colors, primary);
   padding-top: 65px;
   @include media-breakpoint-down(sm) {
     padding-top: 38px;

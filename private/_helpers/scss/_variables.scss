@@ -5,6 +5,11 @@
   --blue-text: #000547;
   --btn-color: #E0FA00;
 }
+
+$theme-colors: (
+  "primary": #F8F9FA,
+  "secondary": #FFF,
+);
 $typography_headers__margin-top: 0;
 $typography_headers__margin-bottom: 0;
 $typography_ol_li__color: #0833C5;
