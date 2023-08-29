@@ -83,7 +83,7 @@
       margin-top: 48px;
     }
   }
-  &__list {
+  .report__list {
     margin-top: 30px;
     @include media-breakpoint-down(sm) {
       margin-top: 20px;
@@ -91,7 +91,7 @@
     @include media-breakpoint-between(sm, lg) {
       margin-top: 26px;
     }
-    li.report__list-item {
+    .report__list-item {
       margin-bottom: 25px;
       @include media-breakpoint-down(lg) {
         margin-bottom: 20px;

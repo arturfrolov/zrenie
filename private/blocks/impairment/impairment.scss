@@ -17,14 +17,8 @@
       }
     }
   }
-  &__text {
-    margin: 0;
-  }
-  &__list {
-    margin: 0;
-    &_blue {
-      color: #0833C5;
-      font-weight: 500;
-    }
+  &__list_blue {
+    color: #0833C5;
+    font-weight: 500;
   }
 }

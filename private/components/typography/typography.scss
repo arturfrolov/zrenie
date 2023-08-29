@@ -91,7 +91,7 @@
   address,
   blockquote,
   table {
-    margin: 0 0 #{$typography_line_height}em 0;
+    margin: 0;
   }
   b,
   strong {
@@ -268,11 +268,11 @@
       content: close-quote;
     }
   }
-  blockquote {
-    border-radius: $typography_blockquote__border-radius;
-    border: 1px dashed $typography_blockquote__border-color;
-    padding: $typography_blockquote__padding;
-  }
+  //blockquote {
+  //  border-radius: $typography_blockquote__border-radius;
+  //  border: 1px dashed $typography_blockquote__border-color;
+  //  padding: $typography_blockquote__padding;
+  //}
   hr {
     clear: both;
     margin: 50px 0;
