@@ -1,11 +1,21 @@
 .article-card {
   &__item {
     display: flex;
+    flex-basis: calc((100% / 3) - 0.5rem);
+    gap: 30px;
     flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 9px;
     border-bottom: solid 1px var(--blue-text);
     cursor: pointer;
+    @include media-breakpoint-down(sm) {
+      gap: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      flex-basis: 100%;
+    }
+    @include media-breakpoint-between(md, lg) {
+      flex-basis: calc((100% / 2) - 1rem);
+    }
     &-img {
       height: 213px;
       position: relative;

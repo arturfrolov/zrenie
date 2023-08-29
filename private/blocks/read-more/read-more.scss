@@ -19,32 +19,14 @@
     }
   }
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 356px);
-    grid-template-rows: minmax(331px, auto);
-    grid-auto-rows: minmax(331px, auto);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 44px;
     row-gap: 35px;
     @include media-breakpoint-down(sm) {
       margin-top: 23px;
-      grid-template-columns: repeat(1, auto);
       row-gap: 27px;
-    }
-    @include media-breakpoint-between(sm, md) {
-      margin-top: 43px;
-      grid-template-columns: repeat(1, auto);
-      row-gap: 70px;
-    }
-    @include media-breakpoint-between(md, lg) {
-      margin-top: 43px;
-      grid-template-columns: repeat(2, 356px);
-      justify-content: space-between;
-      row-gap: 35px;
-    }
-    @include media-breakpoint-between(lg, xl) {
-      margin-top: 50px;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 17px;
     }
   }
   &__btns {
