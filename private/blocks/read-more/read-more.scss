@@ -1,7 +1,6 @@
 .read-more {
   background-color: map-get($theme-colors, primary);
   color: var(--blue-text);
-  font-size: 22px;
   line-height: 110%;
   padding: 130px 0 58px 0;
   @include media-breakpoint-down(sm) {
