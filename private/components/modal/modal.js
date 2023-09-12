@@ -1,78 +1,81 @@
 // eslint-disable-next-line boundaries/element-types
 import postData from '../services/services';
 
-function forms(formSelector, modalSelector, modalCloseSelector) {
-  // Form
+class Modal {
+  constructor(
+    {
+      formSelector,
+      modalSelector,
+      modalCloseSelector,
+      modalDialog,
+    },
+  ) {
+    this.modal = document.querySelector(modalSelector);
+    this.form = this.modal.querySelector(formSelector);
+    this.closeBtn = this.modal.querySelector(modalCloseSelector);
+    this.prevModalDialog = this.modal.querySelector(modalDialog);
+    this.messages = {
+      loading: './assets/spinner.svg',
+      success: 'Спасибо! Скоро мы с вами свяжемся.',
+      failure: 'Что-то пошло не так...',
+    };
+  }
 
-  const modal = document.querySelector(modalSelector);
-  const form = modal.querySelector(formSelector);
-  const closeBtn = modal.querySelector(modalCloseSelector);
+  showThanksModal(message) {
+    this.prevModalDialog.classList.add('d-none');
+    this.prevModalDialog.classList.remove('modal-dialog-centered');
 
-  const messages = {
-    loading: './assets/spinner.svg',
-    success: 'Спасибо! Скоро мы с вами свяжемся.',
-    failure: 'Что-то пошло не так...',
-  };
-
-  function showThanksModal(message) {
-    const prevModalDialog = document.querySelector('.modal-dialog');
-
-    prevModalDialog.classList.add('d-none');
-    prevModalDialog.classList.remove('modal-dialog-centered');
-
-    const thanksModal = document.createElement('div');
-    thanksModal.classList.add('modal-dialog');
-    thanksModal.classList.add('modal-dialog-centered');
-    thanksModal.innerHTML = `
+    this.thanksModal = document.createElement('div');
+    this.thanksModal.classList.add('modal-dialog');
+    this.thanksModal.classList.add('modal-dialog-centered');
+    this.thanksModal.innerHTML = `
             <div class="modal-content">
                 <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 <div class="modal-title">${message}</div>
             </div>
         `;
 
-    document.querySelector('.modal').append(thanksModal);
+    document.querySelector('.modal').append(this.thanksModal);
     setTimeout(() => {
       document.querySelector('.fade').style.transition = 'all 0s';
-      closeBtn.click();
-      thanksModal.remove();
-      prevModalDialog.classList.remove('d-none');
-      prevModalDialog.classList.add('modal-dialog-centered');
+      this.closeBtn.click();
+      this.thanksModal.remove();
+      this.prevModalDialog.classList.remove('d-none');
+      this.prevModalDialog.classList.add('modal-dialog-centered');
     }, 5000);
   }
 
-  function bindPostData(form) {
-    form.addEventListener('submit', (event) => {
+  bindPostData() {
+    this.form.addEventListener('submit', (event) => {
       event.preventDefault();
 
-      const statusMessage = document.createElement('img');
-      statusMessage.setAttribute('src', messages.loading);
-      statusMessage.style.cssText = `
+      this.statusMessage = document.createElement('img');
+      this.statusMessage.setAttribute('src', this.messages.loading);
+      this.statusMessage.style.cssText = `
                 display: block;
                 margin: 0 auto;
             `;
 
-      form.insertAdjacentElement('afterend', statusMessage);
+      this.form.insertAdjacentElement('afterend', this.statusMessage);
 
-      const formData = new FormData(form);
+      this.formData = new FormData(this.form);
 
-      const json = JSON.stringify(Object.fromEntries(formData.entries()));
+      this.json = JSON.stringify(Object.fromEntries(this.formData.entries()));
 
-      postData('http://localhost:3004/requests', json)
+      postData('http://localhost:3004/requests', this.json)
         .then((data) => {
           console.log(data);
-          showThanksModal(messages.success);
-          statusMessage.remove();
+          this.showThanksModal(this.messages.success);
+          this.statusMessage.remove();
         })
         .catch(() => {
-          showThanksModal(messages.failure);
+          this.showThanksModal(this.messages.failure);
         })
         .finally(() => {
-          form.reset();
+          this.form.reset();
         });
     });
   }
-
-  bindPostData(form);
 }
 
-export default forms;
+export default Modal;
